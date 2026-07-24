@@ -1,0 +1,154 @@
+NEXTREPORTING
+COOKIE POLICY
+
+Version 1.0
+
+
+
+1. INTRODUCTION
+
+This Cookie Policy explains how ATEBIZ ("Company", "we", "our") uses cookies and
+similar technologies when you visit our websites, customer portals and other online
+services associated with NEXTREPORTING.
+
+This Policy should be read together with our Privacy Notice.
+
+Unless otherwise indicated, references to "cookies" also include similar technologies
+such as pixels, local storage objects, software development kits (SDKs), tags, scripts and
+comparable tracking technologies capable of storing or retrieving information from a
+user's device.
+
+
+2. WHAT ARE COOKIES?
+
+Cookies are small text files placed on your device when you visit a website.
+
+Cookies enable websites and online services to recognise devices, remember
+preferences, improve security, analyse usage, measure performance and, where
+appropriate, personalise content and communications.
+
+Some cookies remain active only for the duration of your browsing session, while others
+remain stored for longer periods depending upon their purpose and configuration.
+
+
+3. WHY WE USE COOKIES
+
+We use cookies only where they are necessary for legitimate technical purposes or
+where you have provided the consent required under applicable law.
+
+Cookies may be used to ensure the secure operation of our websites, maintain user
+sessions, authenticate authorised users, remember preferences, improve website
+functionality, understand how visitors interact with our digital services, identify technical
+issues, enhance performance and support our marketing activities where permitted.
+We do not use cookies to make automated decisions producing legal or similarly
+significant effects.
+
+
+4. TYPES OF COOKIES
+
+The cookies used on our websites fall into several categories depending upon their
+purpose.
+
+Strictly Necessary Cookies are essential for the operation, security and functionality of
+the website. These cookies cannot be disabled through the consent management
+platform because the website would not function correctly without them.
+
+Preference Cookies remember choices made by users, such as language preferences or
+interface settings, in order to provide a more consistent browsing experience.
+
+Analytics Cookies enable us to understand how visitors use our websites, allowing us to
+improve performance, usability and content. These cookies are deployed only where
+required consent has been obtained.
+
+Marketing Cookies may be used to measure the effectiveness of campaigns, personalise
+communications and understand interactions with our marketing activities. Such cookies
+are activated only where consent has been provided.
+
+Third-Party Cookies may be placed by carefully selected service providers supporting
+functionalities such as analytics, embedded content, customer support, communications
+or marketing.
+
+
+5. LEGAL BASIS
+
+Strictly Necessary Cookies are processed on the basis of our legitimate interest in
+providing secure and functional online services or because such cookies are technically
+necessary for the provision of a service explicitly requested by the user. All other cookies
+requiring consent under applicable law are deployed only after the user has granted valid
+consent through our Consent Management Platform.
+
+Users may withdraw or modify their consent at any time without affecting the lawfulness
+of processing carried out before consent was withdrawn.
+
+
+6. CONSENT MANAGEMENT
+We use a Consent Management Platform ("CMP") to enable users to manage their cookie
+preferences.
+
+Upon the user's first visit, the CMP presents clear information regarding the categories
+of cookies used and enables users to accept, reject or configure nonessential cookies.
+
+Consent records are securely maintained for evidential purposes in accordance with
+applicable legal requirements.
+
+Users may review or modify their preferences at any time through the cookie settings
+available on our websites.
+
+
+7. THIRD-PARTY SERVICES
+
+Some functionalities available through our websites may rely upon services provided by
+carefully selected third parties.
+
+Where such services deploy cookies or similar technologies, the processing of Personal
+Data remains subject to the privacy policies of the relevant third parties in addition to
+this Policy.
+
+The Company carefully evaluates third-party providers before integrating their services
+and seeks to ensure that appropriate contractual and technical safeguards are
+implemented where Personal Data is processed.
+
+
+8. INTERNATIONAL DATA TRANSFERS
+
+Certain third-party providers whose technologies are deployed through our websites
+may process information from countries located outside the European Economic Area.
+
+Whenever Personal Data collected through cookies is transferred internationally, we
+ensure that appropriate safeguards are implemented in accordance with Chapter V
+GDPR.
+
+Depending upon the circumstances, such safeguards may include adequacy decisions
+adopted by the European Commission, Standard Contractual Clauses, supplementary
+technical measures and transfer risk assessments.
+
+Further information concerning international transfers may be obtained by contacting us
+using the details provided in our Privacy Notice.
+9. COOKIE INVENTORY
+
+For operational and compliance reasons, the inventory of cookies deployed through our
+websites is generated dynamically by our Consent Management Platform.
+
+The inventory identifies each cookie, its provider, purpose, duration, legal basis and
+applicable category.
+
+Because third-party technologies evolve continuously, the dynamically generated
+inventory shall prevail over any illustrative examples that may appear within this Policy.
+
+
+10. CHANGES TO THIS POLICY
+
+We may update this Cookie Policy from time to time in order to reflect changes in
+applicable legislation, regulatory guidance, technological developments or modifications
+affecting our websites and online services.
+
+The latest version shall always be available through our websites together with its
+effective date.
+
+
+11. CONTACT
+Questions concerning this Cookie Policy or the use of cookies may be addressed to:
+
+Privacy Office ATEBIZ
+privacy@atebiz.com
+

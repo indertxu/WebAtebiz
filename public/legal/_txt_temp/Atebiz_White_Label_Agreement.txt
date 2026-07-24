@@ -1,0 +1,1316 @@
+WHITE LABEL SOFTWARE DISTRIBUTION AGREEMENT
+for the Distribution of the NEXTREPORTING Platform
+
+Version 1.0
+
+
+THIS WHITE LABEL SOFTWARE DISTRIBUTION AGREEMENT is entered into
+between:
+
+XXX, a company duly incorporated under the laws of […], having its registered office
+at […] (“ATEBIZ” or "Provider"); and YYY, a company duly incorporated under the
+laws of […], having its registered office at […] ("Distributor").
+
+The Provider and the Distributor are hereinafter jointly referred to as the "Parties"
+and individually as a "Party".
+
+1. PURPOSE
+
+The Provider has developed and owns the proprietary Software as a Service
+platform marketed as NEXTREPORTING, consisting of a cloud-based financial
+reporting, analytics and business intelligence solution designed to generate
+dashboards and financial insights from compatible enterprise systems.
+
+The Distributor has developed and commercialises the SaaS platform
+KONSOLIDATOR, which is intended to operate as the primary financial
+management platform used by its customers.
+
+The Parties acknowledge that NEXTREPORTING operates as an analytics and
+reporting layer built upon data made available by KONSOLIDATOR through
+authorised interoperability mechanisms. Accordingly, the Provider does not
+warrant the accuracy, completeness or continued availability of information
+originating from KONSOLIDATOR or any systems controlled by the Distributor.
+
+The Distributor remains solely responsible for ensuring the proper operation,
+maintenance, configuration and availability of KONSOLIDATOR and its APIs, as well
+as the integrity of the data supplied to NEXTREPORTING.
+
+The Parties wish to establish a long-term commercial relationship under which the
+Distributor shall market and distribute NEXTREPORTING under a white-label model
+as an integrated component of the KONSOLIDATOR ecosystem.
+
+Accordingly, the Provider appoints the Distributor as an authorised White Label
+Distributor of NEXTREPORTING under the terms and conditions set out in this
+Agreement.
+
+Nothing contained herein shall create a partnership, agency, franchise or joint
+venture between the Parties.
+2. APPOINTMENT
+
+Subject to the terms of this Agreement, the Provider grants the Distributor a non-
+transferable, non-exclusive licence to market, promote, sublicense access to and
+distribute NEXTREPORTING under the Distributor's own commercial branding
+within the Territory.
+
+The Distributor shall act as an independent distributor and shall contract with End
+Customers in its own name and for its own account.
+
+The Distributor shall not represent itself as the owner, developer or copyright holder
+of NEXTREPORTING.
+
+The Provider reserves the right to appoint additional distributors both within and
+outside the Territory unless exclusivity has been expressly agreed in writing.
+
+
+3. TERRITORY
+
+The initial Territory shall comprise Denmark.
+
+The Parties may agree in writing to extend the Territory to additional jurisdictions.
+The Distributor shall not actively market NEXTREPORTING outside the Territory
+without the Provider's prior written consent.
+
+Nothing shall prevent the Provider from supplying NEXTREPORTING directly to
+customers located outside the Territory.
+
+The Provider also reserves the unrestricted right to market NEXTREPORTING
+directly under its own brand within Spain and any other territory not expressly
+granted to the Distributor.
+
+
+4. WHITE LABEL LICENCE
+
+The Provider grants the Distributor the right to commercialise NEXTREPORTING
+under the Distributor's branding.
+
+The Distributor may replace the commercial name, logos, colour schemes, domain
+names and visual identity of NEXTREPORTING provided that such modifications do
+not affect the underlying software, security architecture, functionality or
+intellectual property.
+The Distributor shall not remove copyright notices, proprietary legends or technical
+identifiers that are not intended to be visible to End Customers and are necessary
+for legal, operational or security purposes.
+
+Any marketing materials developed by the Distributor shall accurately describe the
+functionality of NEXTREPORTING and shall not create contractual commitments
+exceeding those assumed by the Provider.
+
+The Distributor shall ensure that all End Customers are informed that the underlying
+software technology is licensed under contractual arrangements established
+between the Parties.
+
+5. OWNERSHIP OF THE SOFTWARE
+
+The Distributor expressly acknowledges that all Intellectual Property Rights relating
+to NEXTREPORTING remain exclusively vested in the Provider.
+
+Nothing contained in this Agreement transfers ownership of the software, source
+code, object code, databases, algorithms, dashboards, methodologies, APIs,
+documentation, technical architecture, know-how or any derivative developments.
+The Distributor acquires only the contractual rights expressly granted under this
+Agreement.
+
+The Distributor shall not register, directly or indirectly, any trademark, domain
+name, company name or other distinctive sign liable to create confusion with
+NEXTREPORTING or any other Intellectual Property belonging to the Provider.
+
+
+6. INTEGRATION WITH KONSOLIDATOR
+
+The Parties acknowledge that NEXTREPORTING has been specifically designed to
+interoperate with KONSOLIDATOR through authorised application programming
+interfaces ("APIs").
+
+The Distributor shall make available to the Provider the API connectivity, technical
+documentation and reasonable technical cooperation necessary to ensure
+interoperability between both platforms.
+
+Each Party shall remain solely responsible for the operation, maintenance, security
+and performance of its own software environment.
+
+Neither Party guarantees uninterrupted interoperability where changes are
+introduced by the other Party without prior coordination.
+
+Each Party shall use commercially reasonable efforts to provide advance notice of
+material API changes likely to affect interoperability.
+Where either Party intends to deprecate, replace or materially modify an API
+endpoint, authentication method or technical interface, it shall provide reasonable
+prior notice and cooperate in good faith to minimise disruption.
+
+Neither Party shall intentionally introduce technical changes designed to impair
+interoperability.
+
+
+7. END CUSTOMERS
+
+The Distributor shall be solely responsible for negotiating, contracting with and
+invoicing End Customers.
+
+The contractual relationship with each End Customer shall exist exclusively
+between the Distributor and the relevant End Customer.
+
+The Provider shall not become party to any contract entered into between the
+Distributor and an End Customer solely by reason of providing the underlying
+software.
+
+The Distributor shall ensure that each End Customer accepts the Provider's
+mandatory SaaS Terms and Conditions, Privacy Notice and any other policies
+identified by the Provider as mandatory.
+
+Where the Provider updates mandatory legal documentation in order to comply
+with applicable legislation or to protect the integrity of the Service, the Distributor
+shall implement such updates within a reasonable period.
+
+The Distributor shall not modify the Provider's mandatory legal terms in any manner
+that materially increases the Provider's legal exposure without the Provider's prior
+written approval.
+
+
+8. CUSTOMER SUPPORT
+
+Unless otherwise agreed, the Distributor shall provide first-line customer support
+directly to End Customers.
+
+First-line support shall include user assistance, password resets, functional
+guidance, configuration support and the initial diagnosis of incidents.
+
+The Provider shall provide second-line and third-line technical support to the
+Distributor in accordance with the applicable Service Level Agreement.
+
+The Distributor shall ensure that only appropriately documented incidents are
+escalated to the Provider.
+The Provider may refuse to investigate incidents where reasonable diagnostic
+information has not been supplied.
+
+
+9. COMMERCIAL MODEL
+
+The Distributor shall purchase subscriptions to NEXTREPORTING from the Provider
+in accordance with the commercial conditions agreed between the Parties.
+
+Unless otherwise agreed, the Distributor shall determine independently the resale
+prices charged to End Customers.
+
+Nothing contained in this Agreement establishes minimum resale prices or restricts
+the Distributor's commercial independence except where required to protect the
+Provider's Intellectual Property Rights or regulatory compliance.
+
+The Provider may modify wholesale pricing upon renewal by giving not less than
+ninety (90) days' prior written notice.
+
+
+10. MARKETING AND BRANDING
+
+The Distributor shall market and promote the White Label Solution in a professional
+manner consistent with the reputation, quality standards and market positioning of
+the Service.
+
+Except as expressly authorised under this Agreement, the Distributor shall not
+represent itself as the developer, owner or creator of the underlying software
+platform.
+
+The Distributor may market the Service exclusively under its own trademarks,
+corporate identity and commercial documentation, provided that such branding
+does not create a misleading impression regarding ownership of the Intellectual
+Property Rights underlying the Service or the respective responsibilities of the
+Parties.
+
+The Provider grants the Distributor a limited, revocable, non-exclusive and non-
+transferable licence to use those trademarks, logos, product descriptions,
+screenshots, technical documentation and marketing materials expressly
+approved by the Provider for the purposes of this Agreement.
+
+Neither Party shall issue press releases, public announcements, customer
+references or case studies referring to the other Party without prior written approval,
+except where disclosure is required by applicable law or stock exchange
+regulations.
+The Distributor shall ensure that all promotional material accurately reflects the
+capabilities of the Service and shall not make representations, warranties or
+commitments on behalf of the Provider that are inconsistent with this Agreement or
+the Provider's published documentation.
+
+
+11. PRODUCT DEVELOPMENT AND ROADMAP
+
+The Provider shall retain exclusive control over the development, maintenance,
+architecture, functionality, release schedule and technological evolution of
+NEXTREPORTING.
+
+Nothing contained in this Agreement shall oblige the Provider to develop specific
+functionalities requested by the Distributor unless expressly agreed in writing.
+The Distributor may submit suggestions, enhancement requests or product
+improvement proposals.
+
+The Provider shall remain free to determine whether and when such proposals are
+incorporated into the Service.
+
+Unless otherwise expressly agreed, all product enhancements, improvements,
+derivative developments and new functionalities implemented by the Provider shall
+become part of NEXTREPORTING and shall remain the exclusive property of the
+Provider.
+
+Suggestions, comments and product feedback provided by the Distributor shall not
+give rise to any ownership rights or financial compensation unless otherwise
+expressly agreed.
+
+
+12. SERVICE CHANGES
+
+The Provider may modify, enhance, replace or discontinue individual functionalities
+of the Service where reasonably necessary for technical, operational, security or
+regulatory reasons.
+
+The Provider shall use commercially reasonable efforts to avoid changes materially
+reducing the core functionality available to End Customers.
+
+Where material functional changes are expected to affect the Distributor's
+commercial activities, the Provider shall provide reasonable prior notice together
+with appropriate implementation guidance.
+
+The Parties acknowledge that continuous technological evolution constitutes an
+essential characteristic of cloud-based software services.
+13. DATA PROTECTION
+
+The Parties undertake to maintain strict confidentiality with respect to any personal
+data to which they may have access or of which they may become aware in
+connection with the execution and performance of this Agreement, whether relating
+to themselves or to third parties, and to comply at all times with the applicable
+legislation governing the protection of personal data. Each Party shall
+independently comply with all applicable Data Protection Laws. Each Party shall
+independently comply with all applicable Data Protection Laws.
+
+As between the Parties, the Distributor shall normally act as Controller in relation
+to Personal Data relating to prospective customers, existing customers,
+commercial contacts, contractual administration and its own business operations.
+
+Where the Provider Processes Personal Data on behalf of the Distributor through
+NEXTREPORTING, such Processing shall be governed exclusively by the applicable
+Data Processing Agreement (DPA).
+
+Each Party shall implement appropriate technical and organisational measures
+designed to protect Personal Data against accidental or unlawful destruction, loss,
+alteration, unauthorised disclosure or unauthorised access.
+
+Neither Party shall knowingly require the other Party to Process Personal Data in a
+manner that infringes applicable Data Protection Law.
+
+Where a Personal Data Breach affecting the White Label Solution requires
+cooperation between the Parties, each Party shall provide the other with reasonable
+assistance consistent with its respective legal obligations.
+
+The Parties mutually acknowledge and agree that the personal data contained in
+this Agreement shall be processed for the purposes of managing their contractual
+relationship, formalising and administering the commitments arising therefrom,
+and complying with the respective legal obligations, contractual obligations and
+legitimate interests applicable to each Party, on the corresponding legal bases
+under applicable data protection legislation.
+
+Such personal data shall be processed for the duration of the contractual
+relationship and, following its termination, for such period as may be required to
+comply with applicable legal or contractual retention obligations.
+
+The personal data may be incorporated into the respective records maintained by
+each Party for the purposes of managing such relationship. The data subjects may,
+at any time, exercise the rights recognised under applicable data protection
+legislation, including the rights of access, rectification, erasure, data portability,
+restriction of processing and objection, by submitting a written request to the Party
+acting as controller of the relevant personal data at the address specified in this
+Agreement or at any other address subsequently notified for such purpose. They
+may also contact the relevant privacy officer or data protection contact of the
+respective Party using the same contact details.
+
+Nothing in this clause shall prejudice the right of any data subject to lodge a
+complaint with the competent supervisory authority or to seek any other remedy
+available under applicable data protection legislation.
+
+
+14. INFORMATION SECURITY
+
+Each Party acknowledges that the security of the White Label Solution depends
+upon the coordinated operation of both NEXTREPORTING and KONSOLIDATOR.
+
+The Provider shall remain responsible for the security of the NEXTREPORTING
+platform and the infrastructure under its operational control.
+
+The Distributor shall remain responsible for the security of KONSOLIDATOR, its
+APIs, customer administration systems, authentication mechanisms and any
+infrastructure under its control.
+
+Each Party shall promptly notify the other of any confirmed cybersecurity incident
+that could reasonably affect the interoperability, confidentiality, integrity or
+availability of the White Label Solution.
+
+The Parties shall cooperate in good faith to investigate, contain and mitigate any
+security incident affecting the integrated operation of the platforms.
+Neither Party shall disclose details of a joint security incident to customers or public
+authorities without prior coordination, except where immediate disclosure is
+required by applicable law.
+
+
+15. AUDIT AND COMPLIANCE
+
+Each Party shall maintain records reasonably necessary to demonstrate
+compliance with its obligations under this Agreement.
+
+Where reasonably necessary to verify compliance with contractual obligations
+materially affecting the other Party, either Party may request relevant information or
+supporting documentation.
+
+Audits shall be limited to matters directly related to the performance of this
+Agreement and shall be conducted in a manner that does not unnecessarily
+interfere with the audited Party's business operations or compromise the
+confidentiality of third-party information.
+Neither Party shall be obliged to disclose source code, commercially sensitive
+information unrelated to this Agreement or information compromising the security
+of other customers.
+
+Independent audit reports, recognised certifications or equivalent compliance
+documentation may be provided in place of on-site inspections where appropriate.
+
+
+16. WARRANTIES
+
+Each Party represents and warrants that it possesses full corporate authority to
+enter into this Agreement and perform its obligations.
+
+The Provider warrants that it possesses the necessary Intellectual Property Rights
+to license and distribute NEXTREPORTING in accordance with this Agreement.
+
+The Distributor warrants that it possesses all rights necessary to commercialise the
+White Label Solution within the Territory and to enter into contracts with End
+Customers.
+
+Except as expressly provided herein, the Service is supplied on an "as available" and
+"as continually evolving" basis.
+
+Neither Party warrants that the integrated operation of NEXTREPORTING and
+KONSOLIDATOR will always be uninterrupted or entirely free from defects.
+
+
+17. INDEMNITIES
+
+The Provider shall indemnify the Distributor against any final judgment or
+settlement arising from third-party claims alleging that the authorised use of
+NEXTREPORTING infringes Intellectual Property Rights belonging to such third
+party, subject to the conditions and limitations established in this Agreement.
+
+The Distributor shall indemnify the Provider against claims arising from:
+
+  a) modifications introduced by the Distributor without the Provider's approval;
+  b) unauthorised representations made to End Customers;
+  c) contractual commitments exceeding those authorised by the Provider;
+  d) misuse of the Service;
+  e) infringement of third-party rights resulting from materials supplied by the
+     Distributor.
+
+Each indemnified Party shall promptly notify the indemnifying Party of any relevant
+claim and shall permit the indemnifying Party to assume control of the defence,
+provided that no settlement adversely affecting the indemnified Party may be
+concluded without its prior written consent, such consent not to be unreasonably
+withheld.
+
+
+18. LIMITATION OF LIABILITY
+
+Neither Party shall be liable to the other for indirect, incidental, consequential or
+punitive damages, including loss of profits, anticipated savings, business
+opportunities, goodwill, customers or revenue.
+
+The Provider shall not be liable for claims arising from the Distributor's contractual
+commitments towards End Customers that exceed the obligations assumed by the
+Provider under this Agreement.
+
+Likewise, the Provider shall not be liable for interruptions, inaccuracies or failures
+attributable to KONSOLIDATOR, third-party APIs or infrastructure outside the
+Provider's reasonable control.
+
+Except in cases of fraud, wilful misconduct or liability that cannot lawfully be
+excluded, the aggregate liability of either Party arising under this Agreement shall
+not exceed the total amounts paid or payable by the Distributor to the Provider
+during the twelve (12) months immediately preceding the event giving rise to the
+relevant claim.
+
+The limitations contained in this Clause reflect the commercial allocation of risks
+agreed by the Parties and constitute an essential basis upon which this Agreement
+has been concluded.
+
+
+19. INSURANCE
+
+Each Party shall maintain, throughout the term of this Agreement, insurance
+coverage appropriate to the nature and scale of its business activities, including,
+where commercially appropriate, professional indemnity insurance, cyber liability
+insurance and public liability insurance.
+
+Upon reasonable request, either Party shall provide evidence that such insurance
+remains in force.
+
+The maintenance of insurance shall not limit either Party's contractual liabilities
+under this Agreement.
+
+
+
+
+20. TERM
+This Agreement shall enter into force on the Effective Date and shall remain in effect
+for an initial term of three (3) years unless otherwise specified in the applicable
+Commercial Schedule.
+
+Upon expiry of the Initial Term, this Agreement shall automatically renew for
+successive periods of one (1) year unless either Party gives written notice of its
+intention not to renew at least one hundred and eighty (180) days prior to the expiry
+of the then-current term.
+
+The Parties acknowledge that the commercial relationship established under this
+Agreement requires continuity in order to protect End Customers and preserve the
+stability of the White Label Solution. Consequently, neither Party shall
+unreasonably exercise any contractual right in a manner likely to jeopardise the
+continuity of services to existing End Customers.
+
+
+21. TERMINATION
+
+Either Party may terminate this Agreement with immediate effect by written notice
+if the other Party: a) materially breaches this Agreement and fails to remedy such
+breach within thirty (30) days after receiving written notice; b) becomes insolvent,
+enters into liquidation, administration or any equivalent insolvency proceeding; c)
+ceases to carry on business in the ordinary course; d) commits fraud, wilful
+misconduct or any criminal offence materially affecting the commercial
+relationship between the Parties; e) repeatedly commits material breaches
+demonstrating an unwillingness or inability to comply with this Agreement.
+
+The Provider may additionally terminate this Agreement where the Distributor
+intentionally damages the reputation of the Service, misrepresents its functionality,
+infringes the Provider's Intellectual Property Rights or repeatedly fails to comply
+with mandatory legal documentation applicable to End Customers.
+
+The Distributor may terminate this Agreement where the Provider permanently
+discontinues the NEXTREPORTING platform or materially withdraws essential
+functionality without providing a commercially reasonable alternative.
+
+Termination shall always be exercised in good faith and in accordance with the
+principle of proportionality.
+
+
+22. EFFECT OF TERMINATION
+
+Termination of this Agreement shall not automatically terminate active
+subscriptions held by End Customers.
+
+The Parties shall cooperate in good faith to ensure an orderly transition designed to
+minimise disruption to End Customers.
+Unless otherwise agreed, the Distributor shall remain entitled to continue servicing
+existing subscriptions until the expiry of their respective contractual terms.
+
+No new subscriptions may be sold following the effective date of termination unless
+expressly authorised in writing by the Provider.
+
+The Provider shall continue providing the technical platform during the agreed
+transition period provided that the Distributor continues to comply with its payment
+obligations.
+
+Nothing contained herein shall require either Party to continue the commercial
+relationship indefinitely beyond the agreed transition arrangements.
+
+
+23. TRANSITION ASSISTANCE
+
+Recognising the importance of business continuity, the Parties undertake to
+cooperate in good faith following termination of this Agreement.
+
+During the Transition Period, the Provider shall provide reasonable technical
+cooperation to facilitate an orderly migration of active End Customers.
+
+Such assistance may include reasonable technical documentation, migration
+support, API cooperation, export of Customer Data, technical consultations and
+other transition activities reasonably necessary to preserve service continuity.
+
+Unless termination results from the Provider's material breach, Transition
+Assistance shall constitute Professional Services subject to the Provider's then-
+current professional service rates.
+
+Neither Party shall intentionally obstruct or delay the orderly transition of End
+Customers.
+
+
+24. CUSTOMER DATA AFTER TERMINATION
+
+Each Party shall remain responsible for the Personal Data under its respective
+control.
+
+The Provider shall continue Processing Personal Data solely to the extent necessary
+to complete the agreed transition activities, comply with applicable legal
+obligations or fulfil its obligations under the applicable Data Processing Agreement.
+Upon completion of the Transition Period, Personal Data shall be returned,
+exported, deleted or anonymised in accordance with the applicable contractual
+documentation.
+Nothing contained in this Agreement shall require either Party to retain Personal
+Data beyond the periods required under applicable law.
+
+
+25. CONTINUITY OF END CUSTOMER SERVICES
+
+The Parties acknowledge that uninterrupted access to financial reporting services
+is essential for End Customers.
+
+Accordingly, throughout any Transition Period, the Parties shall cooperate to
+minimise operational disruption.
+
+Neither Party shall directly solicit the other Party's existing End Customers during
+the agreed Transition Period except where expressly authorised under this
+Agreement or where the relevant End Customer independently initiates such
+discussions.
+
+The Parties shall coordinate communications relating to the termination of this
+Agreement in order to avoid unnecessary uncertainty for End Customers.
+
+No public announcement concerning termination shall be issued without prior
+consultation unless disclosure is required by law.
+
+
+26. NON-COMPETITION AND NON-CIRCUMVENTION
+
+Nothing contained in this Agreement shall prevent either Party from developing,
+acquiring, licensing or commercialising software products competing with those of
+the other Party.
+
+However, throughout the term of this Agreement, neither Party shall knowingly use
+Confidential Information obtained under this Agreement for the purpose of
+developing a competing product designed substantially to replicate the specific
+technical solutions or proprietary methodologies of the other Party.
+
+The Distributor shall not circumvent the Provider by attempting to acquire
+ownership of the Provider's Intellectual Property Rights.
+
+Likewise, the Provider shall not intentionally interfere with contractual relationships
+existing between the Distributor and active End Customers within the Territory
+during the agreed Transition Period.
+
+This Clause shall not restrict lawful competition conducted independently and
+without misuse of Confidential Information.
+
+
+27. FORCE MAJEURE
+Neither Party shall be liable for any delay or failure to perform its obligations
+resulting from events beyond its reasonable control, including natural disasters,
+war, civil unrest, labour disputes, governmental actions, widespread failures of
+communications networks, failures affecting cloud infrastructure providers,
+cyberattacks of exceptional scale or other events constituting Force Majeure.
+
+The affected Party shall notify the other Party without undue delay and shall use
+commercially reasonable efforts to mitigate the effects of the relevant event.
+
+Where a Force Majeure Event continues for more than ninety (90) consecutive days
+and materially prevents performance of this Agreement, either Party may terminate
+the Agreement upon written notice.
+
+
+28. ASSIGNMENT
+
+Neither Party may assign or transfer this Agreement without the prior written
+consent of the other Party, such consent not to be unreasonably withheld or
+delayed.
+
+Notwithstanding the foregoing, either Party may assign this Agreement without
+consent; a) to an Affiliate; b) to a successor resulting from merger, acquisition or
+corporate reorganisation; or c) to a purchaser of substantially all of the business or
+assets relating to the subject matter of this Agreement.
+
+The assigning Party shall remain liable for obligations accrued prior to the effective
+date of the assignment unless otherwise agreed.
+
+
+29. NOTICES
+
+Any notice required under this Agreement shall be made in writing and delivered by
+recognised courier service or electronic mail to the contact details designated by
+each Party.
+
+Operational communications concerning technical matters shall not constitute
+formal contractual notices unless expressly identified as such.
+
+Notices shall be deemed received on the first Business Day following successful
+transmission by electronic mail or upon confirmed delivery where sent by courier.
+
+30. ENTIRE AGREEMENT
+
+This Agreement, together with its Schedules and Annexes, constitutes the complete
+agreement between the Parties concerning the distribution of NEXTREPORTING.
+It supersedes all prior discussions, negotiations, proposals and understandings
+relating to its subject matter.
+
+No amendment shall be effective unless made in writing and signed by duly
+authorised representatives of both Parties.
+
+If any provision is held invalid or unenforceable, the remaining provisions shall
+remain in full force and effect.
+
+No failure or delay by either Party in exercising any right shall constitute a waiver of
+that right.
+
+
+31. GOVERNING LAW AND DISPUTE RESOLUTION
+
+This Agreement and any dispute, claim or non-contractual obligation arising out of
+or in connection with it shall be governed by and construed in accordance with the
+laws of Spain, excluding its conflict of laws rules.
+
+Recognising the strategic nature of their commercial relationship, the Parties
+undertake to use their best efforts to resolve amicably any disagreement arising out
+of or in connection with this Agreement before commencing judicial proceedings.
+
+Any dispute shall first be referred to senior executives of each Party having authority
+to negotiate and settle the matter.
+
+If the Parties are unable to reach an amicable settlement within thirty (30) days
+following written notification of the dispute, or within such longer period as they
+may mutually agree, either Party may submit the dispute to the exclusive
+jurisdiction of the Courts of Valencia (Spain).
+
+Each Party irrevocably submits to the exclusive jurisdiction of the Courts of Valencia
+(Spain) and expressly waives any objection based on venue or any claim that
+proceedings have been brought before an inconvenient forum.
+
+
+
+
+                                 SCHEDULE 1
+                             COMMERCIAL SCHEDULE
+
+         forming part of the White Label Software Distribution Agreement
+   1. PURPOSE
+   2.
+This Commercial Schedule forms an integral part of the White Label Software
+Distribution Agreement (the "Agreement").
+
+Its purpose is to define the commercial terms applicable to the distribution of
+NEXTREPORTING by the Distributor.
+
+Except as expressly provided herein, capitalised terms shall have the meanings
+assigned to them in the Agreement.
+
+Where any provision of this Commercial Schedule conflicts with the Agreement,
+this Commercial Schedule shall prevail solely in relation to the commercial matters
+expressly addressed herein.
+
+
+2. COMMERCIAL DETAILS
+
+Effective Date
+[…]
+Initial Term
+Three (3) years.
+Automatic Renewal
+Successive one (1) year periods unless either Party provides notice of non-renewal
+in accordance with the Agreement.
+Territory
+Denmark
+Authorised Brand
+[Commercial name under which NEXTREPORTING will be offered.]
+Underlying Software
+NEXTREPORTING.
+Primary Integrated Platform
+KONSOLIDATOR.
+
+
+3. PRODUCTS
+
+The following products are included within the scope of this Schedule:
+
+
+ Product                  Distribution Rights           White Label   Professional Services
+ NEXTREPORTING Core       Included                      Yes           Optional
+ Additional Modules       Subject to future agreement   Yes           Optional
+ Future Functionalities   By mutual written agreement   Yes           Optional
+The incorporation of new modules, functionalities or product families may be
+documented through an updated version of this Commercial Schedule without
+requiring amendment of the Agreement.
+
+
+4. COMMERCIAL MODEL
+
+The Provider grants subscriptions to the Distributor on a wholesale basis.
+
+The Distributor shall acquire subscriptions directly from the Provider and shall be
+solely responsible for determining the commercial conditions applicable to End
+Customers.
+
+Nothing contained in this Agreement establishes an agency relationship,
+commission structure or fiduciary obligation between the Parties.
+
+The Distributor bears the commercial risk associated with the resale of
+subscriptions.
+
+The Provider shall have no contractual relationship with End Customers except
+where expressly agreed in writing.
+
+
+5. LICENSING MODEL
+
+Unless otherwise agreed, subscriptions shall be granted on an annual basis.
+Each subscription shall entitle the relevant End Customer to access the Service in
+accordance with the applicable SaaS Terms.
+
+The Distributor shall not subdivide subscriptions, create unauthorised hosting
+environments or otherwise modify the licensing model established by the Provider.
+
+
+6. ORDERING PROCEDURE
+
+Orders shall be submitted using the ordering procedure agreed between the
+Parties.
+
+Each order shall identify at least customer reference, subscription type, number of
+authorised users, subscription period, applicable modules and Professional
+Services, where applicable.
+
+An order becomes binding only upon written acceptance by the Provider.
+
+The Provider may reject orders where technically impossible, commercially
+unreasonable or contrary to applicable law.
+7. FEES
+
+The Distributor shall pay the wholesale fees set out in Appendix A (Price List).
+
+Unless otherwise agreed, wholesale prices are confidential and shall not be
+disclosed to third parties.
+
+The Parties acknowledge that wholesale pricing reflects the allocation of
+commercial responsibilities established under the Agreement.
+
+
+8. PRICE REVIEW
+
+The Provider may revise wholesale pricing upon renewal of the Agreement or any
+Subscription Term by giving not less than ninety (90) days' prior written notice.
+
+Price revisions may take into account: a) inflation; b) material increases in cloud
+infrastructure costs; c) significant regulatory changes; d) new functionalities
+incorporated into the Service; e) material changes affecting operating costs.
+
+The Provider shall not implement arbitrary or discriminatory pricing adjustments.
+
+
+9. PAYMENT TERMS
+
+Invoices shall be issued monthly unless otherwise agreed.
+
+Payment shall be due within thirty (30) days from the invoice date.
+
+Late payments shall accrue interest at the rate established under applicable law.
+
+Repeated late payment may entitle the Provider to suspend further subscription
+activations.
+
+
+10. TAXES
+
+All prices are exclusive of VAT and any similar indirect taxes.
+
+Each Party shall remain responsible for its own direct taxation.
+
+Cross-border transactions shall be treated in accordance with applicable European
+Union VAT legislation and any relevant double taxation treaties.
+
+Each Party shall cooperate in good faith to ensure the correct application of reverse
+charge mechanisms or other applicable tax rules.
+11. REPORTING
+
+The Distributor shall provide the Provider with periodic subscription reports
+identifying: a) active subscriptions; b) new subscriptions; c) renewals; d) terminated
+subscriptions; and, e) Professional Services sold.
+
+Such reports shall be used exclusively for billing, licence management and strategic
+planning.
+
+The Provider shall treat such reports as Confidential Information.
+
+
+12. COMMERCIAL REVIEW MEETINGS
+
+The Parties shall hold periodic commercial review meetings, normally on a quarterly
+basis, to review the performance of the commercial relationship.
+
+Such meetings may include discussion of commercial performance, customer
+feedback, planned developments, market opportunities, training requirements,
+commercial strategy.
+
+The meetings shall not create binding contractual obligations unless expressly
+recorded in writing and signed by authorised representatives of both Parties.
+
+
+13. APPENDIX A – WHOLESALE PRICE LIST
+
+The Parties shall maintain a separate confidential Wholesale Price List.
+
+The Price List may be updated by mutual agreement without requiring amendment
+of the Agreement.
+
+The applicable version shall always be identified by version number and effective
+date.
+
+
+
+
+                              SCHEDULE 2
+               TECHNICAL INTEGRATION & SUPPORT SCHEDULE
+
+         forming part of the White Label Software Distribution Agreement
+   1. PURPOSE
+   2.
+This Technical Integration & Support Schedule ("Technical Schedule") establishes
+the technical, operational and support framework governing the interoperability
+between the NEXTREPORTING platform and the KONSOLIDATOR platform.
+
+Its purpose is to ensure that the integration between both platforms remains
+secure, stable, interoperable and operational throughout the duration of the
+Agreement.
+
+This Technical Schedule complements the Agreement and the Service Level
+Agreement but does not replace either of them.
+
+In the event of inconsistency, the Agreement shall prevail except in relation to
+technical matters expressly governed by this Technical Schedule.
+
+
+2. TECHNICAL ARCHITECTURE
+
+The Parties acknowledge that the White Label Solution consists of two independent
+Software-as-a-Service platforms operating through secure interoperability.
+
+NEXTREPORTING remains exclusively hosted, operated, maintained and secured
+by the Provider.
+
+KONSOLIDATOR remains exclusively hosted, operated, maintained and secured by
+the Distributor.
+
+The integration between both platforms shall take place exclusively through
+documented Application Programming Interfaces ("APIs") or other mutually
+approved technical interfaces.
+
+Neither Party shall obtain access to the internal software architecture, source code,
+databases or infrastructure of the other Party except to the extent strictly necessary
+for the agreed interoperability.
+
+The Parties acknowledge that each platform shall remain operationally
+independent notwithstanding their functional integration.
+
+
+3. TECHNICAL RESPONSIBILITIES
+
+The Provider shall remain solely responsible for: a) the development, maintenance
+and operation of NEXTREPORTING; b) the security of the NEXTREPORTING
+infrastructure; c) the availability of the NEXTREPORTING APIs; d) the integrity of data
+processed within NEXTREPORTING following successful receipt through the agreed
+interfaces; e) software updates relating to NEXTREPORTING; and, f) technical
+support relating exclusively to NEXTREPORTING.
+
+The Distributor shall remain solely responsible for: a) the development,
+maintenance and operation of KONSOLIDATOR; b) the availability of
+KONSOLIDATOR APIs; c) customer authentication performed through
+KONSOLIDATOR where applicable; d) the integrity of information originating from
+KONSOLIDATOR; e) the administration of End Customer accounts; f) first-line
+customer support.
+
+Neither Party assumes operational responsibility for the infrastructure controlled
+by the other Party.
+
+
+4. API INTEROPERABILITY
+
+The interoperability between NEXTREPORTING and KONSOLIDATOR shall be based
+upon mutually agreed API specifications.
+
+Each Party shall ensure that its APIs are documented with sufficient detail to enable
+the agreed integration.
+
+Documentation shall include authentication methods, supported endpoints,
+request and response formats, mandatory parameters, error handling and version
+information.
+
+Neither Party shall intentionally introduce technical measures designed to impair
+interoperability.
+
+Where integration depends upon third-party services, each Party shall use
+commercially reasonable efforts to minimise the operational impact of changes
+introduced by such third parties.
+
+
+5. API VERSION MANAGEMENT
+
+The Parties acknowledge that APIs evolve over time.
+
+Each Party may introduce new API versions, provided that reasonable backward
+compatibility is maintained wherever technically feasible.
+
+Where an API version is scheduled for deprecation, the relevant Party shall provide
+reasonable prior notice before discontinuing support.
+
+Such notice shall include the affected API version, the expected deprecation
+timeline, migration guidance and technical documentation for the replacement
+version.
+During the migration period, the Parties shall cooperate in good faith to minimise
+operational disruption.
+
+Unless immediate action is required for security reasons, deprecated API versions
+shall remain operational for a commercially reasonable transition period.
+
+
+6. CHANGE MANAGEMENT
+
+Either Party intending to introduce technical changes reasonably expected to affect
+interoperability shall notify the other Party before implementation.
+
+Material technical changes include, without limitation, changes affecting
+authentication mechanisms, modification of mandatory API parameters, changes
+to response structures, deprecation of existing endpoints, modification of security
+protocols, changes affecting data models or modification of rate limits likely to
+affect normal operation.
+
+The Parties shall cooperate to validate compatibility before deployment into
+production.
+
+Where reasonably practicable, testing shall be carried out using dedicated test
+environments.
+
+
+7. DEVELOPMENT ENVIRONMENTS
+
+Each Party shall maintain appropriate development and testing environments
+where reasonably necessary to validate interoperability.
+
+Testing environments need not replicate the production environment in every
+respect but shall provide sufficient functionality to enable compatibility testing.
+Neither Party shall use production environments to perform intrusive testing
+without prior agreement.
+
+Test environments may be modified without notice provided that such
+modifications do not materially affect agreed integration testing.
+
+
+8. AUTHENTICATION
+
+The Parties shall implement secure authentication mechanisms appropriate to the
+sensitivity of the information exchanged.
+Authentication methods may include OAuth 2.0, OpenID Connect, mutual TLS,
+signed tokens, API keys or other recognised industry standards agreed between the
+Parties.
+
+Authentication credentials shall be protected against unauthorised disclosure.
+Each Party shall promptly revoke credentials that are no longer required or that are
+suspected to have been compromised.
+
+
+9. SECURITY OF DATA EXCHANGE
+
+All communications between the platforms shall use appropriately secured
+communication channels.
+
+The Parties shall implement measures designed to preserve the confidentiality,
+integrity and authenticity of data exchanged through the integration.
+
+Where technically appropriate, information shall be encrypted during transmission
+using recognised industry standards.
+
+Neither Party shall intentionally disable security controls implemented to protect
+the interoperability between the platforms.
+
+
+10. MONITORING
+
+Each Party shall maintain operational monitoring appropriate to detect failures
+affecting interoperability.
+
+Monitoring may include API availability, authentication failures, abnormal response
+times, repeated transmission failures and security-related events.
+
+Monitoring data shall be used exclusively for operational, security and service
+improvement purposes.
+
+
+11. INCIDENT MANAGEMENT
+
+Technical incidents affecting interoperability shall be classified according to their
+operational impact.
+
+The Party first identifying the incident shall notify the other Party without undue
+delay.
+
+Each Party shall designate technical contacts responsible for operational
+communications.
+The Parties shall cooperate in good faith throughout the investigation, diagnosis,
+mitigation and resolution of interoperability incidents.
+
+Neither Party shall publicly attribute responsibility for a technical incident until the
+relevant facts have been jointly assessed, except where disclosure is required by
+law.
+
+
+12. ESCALATION PROCEDURE
+
+Operational issues that cannot reasonably be resolved by ordinary support
+personnel shall be escalated through designated technical contacts.
+
+Critical incidents significantly affecting production services shall receive priority
+treatment by both Parties.
+
+Where necessary, either Party may request the establishment of a joint incident
+response team comprising appropriate technical personnel from both
+organisations.
+
+Each Party shall ensure that appropriately qualified personnel remain available
+throughout the management of critical incidents.
+
+
+13. SOFTWARE RELEASES
+
+Each Party shall independently determine its own software release schedule.
+Where a planned release is reasonably expected to affect interoperability,
+reasonable advance notice shall be provided.
+
+Where practicable, significant releases shall first be validated within testing
+environments before deployment into production.
+
+Emergency security releases may be deployed immediately where necessary to
+protect the integrity or security of either platform.
+
+
+14. BUSINESS CONTINUITY
+
+Each Party shall maintain business continuity arrangements appropriate to the
+services under its control.
+
+Where a significant operational disruption affects interoperability, the Parties shall
+cooperate in implementing appropriate recovery measures.
+Neither Party guarantees uninterrupted interoperability during disaster recovery
+events, although both Parties shall use commercially reasonable efforts to restore
+integrated services as soon as reasonably practicable.
+
+
+15. TECHNICAL GOVERNANCE
+
+The Parties shall designate technical representatives responsible for overseeing the
+operational relationship established under this Technical Schedule.
+
+Technical representatives may periodically review interoperability performance,
+planned developments, compatibility issues, significant incidents and
+opportunities for technical improvement.
+
+Technical discussions shall not modify contractual obligations unless expressly
+documented and approved by authorised representatives of both Parties.
+
+
+16. DOCUMENTATION
+
+Each Party shall maintain technical documentation reasonably necessary to
+support the agreed integration.
+
+Documentation shall be updated following material technical changes affecting
+interoperability.
+
+Reasonable access to such documentation shall be provided to authorised
+technical personnel of the other Party.
+
+Confidential technical documentation shall remain subject to the confidentiality
+provisions of the Agreement.
+
+
+17. SURVIVAL
+
+Those provisions of this Technical Schedule relating to confidentiality, Intellectual
+Property Rights, information security, incident cooperation and transition
+assistance shall survive termination of the Agreement for so long as reasonably
+necessary to complete the orderly discontinuation of the integration.
+
+
+
+
+                               SCHEDULE 3
+                     WHITE LABEL BRANDING GUIDELINES
+                                         F
+         forming part of the White Label Software Distribution Agreement
+
+
+1. PURPOSE
+
+This White Label Branding Guidelines Schedule ("Brand Guidelines") establishes
+the conditions governing the branding, presentation and commercial identity of the
+White Label Solution distributed under the Agreement.
+
+Its purpose is to preserve the commercial consistency, reputation and intellectual
+property associated with the NEXTREPORTING platform while allowing the
+Distributor to market the Service under its own brand.
+
+These Brand Guidelines complement the Agreement and shall prevail only with
+respect to branding and visual identity matters.
+
+
+2. WHITE LABEL PRINCIPLE
+
+The Parties acknowledge that the White Label Solution shall be marketed under the
+Distributor's own commercial identity.
+
+Accordingly, the Distributor may present the Service to End Customers using its
+own trademarks, logos, domain names, graphical identity and marketing materials.
+Nothing contained in these Brand Guidelines shall be interpreted as transferring
+ownership of the software, source code, documentation or any Intellectual Property
+Rights relating to NEXTREPORTING.
+
+The White Label Solution remains the proprietary software of the Provider
+irrespective of the branding adopted by the Distributor.
+
+
+3. AUTHORISED BRANDING
+
+Subject to compliance with these Brand Guidelines, the Distributor may: a) use its
+own product name for the White Label Solution; b) apply its own corporate identity
+and visual style; c) adapt colours, typography, icons and graphical resources; d)
+incorporate the Service into the general visual identity of KONSOLIDATOR; e) modify
+menus, labels and user interface terminology where such modifications do not
+affect the functionality, security or legal compliance of the Service.
+
+Any modifications shall preserve the operational integrity of the software.
+
+
+4. PROHIBITED MODIFICATIONS
+The Distributor shall not: a) modify or remove copyright notices embedded within
+the software where such notices are not intended to be visible to End Customers;
+b) alter software code affecting security, authentication or licensing mechanisms;
+c) reverse engineer or create derivative software based upon NEXTREPORTING; d)
+remove technical identifiers necessary for maintenance, security or regulatory
+compliance; e) represent that the Distributor has developed the underlying
+software technology.
+
+The Distributor shall not use branding likely to create confusion concerning the
+ownership of the underlying software.
+
+
+5. TRADEMARKS
+
+Each Party retains exclusive ownership of its respective trademarks, trade names,
+logos, domain names and other distinctive signs.
+
+Nothing contained in the Agreement grants ownership of any trademark belonging
+to the other Party.
+
+Where one Party is authorised to use the trademarks of the other Party, such
+authorisation shall be limited to the purposes expressly contemplated by the
+Agreement.
+
+All goodwill arising from the use of a Party's trademarks shall accrue exclusively to
+that Party.
+
+
+6. COPYRIGHT NOTICES
+
+Unless otherwise agreed, End Customers shall not be required to see any reference
+to the Provider within the ordinary user interface.
+
+However, copyright notices, proprietary legends and software identification
+mechanisms contained within the software architecture or administrative
+environments may remain in place where required for operational, security or legal
+purposes.
+
+The Distributor shall not remove such notices where removal could prejudice the
+Provider's Intellectual Property Rights.
+
+
+7. DOMAINS AND HOSTING
+
+The Distributor may market the White Label Solution through its own domain
+names, websites and customer portals.
+Nothing contained herein transfers ownership of any internet domain.
+
+Each Party shall remain responsible for maintaining and protecting its own domain
+portfolio.
+
+The Distributor shall not register domain names confusingly similar to
+"NEXTREPORTING" or any trademark owned by the Provider unless expressly
+authorised in writing.
+
+
+8. MARKETING MATERIALS
+
+The Distributor shall prepare its own sales documentation, presentations,
+demonstrations and promotional materials.
+
+Such materials shall accurately describe the functionality of the Service and shall
+not contain misleading statements, exaggerated performance claims or warranties
+inconsistent with the Agreement.
+
+Where technical specifications supplied by the Provider are reproduced, they shall
+not be materially altered in a manner capable of misleading End Customers.
+
+
+9. CUSTOMER COMMUNICATIONS
+
+The Distributor shall remain solely responsible for all commercial communications
+addressed to End Customers.
+
+Where communications concern significant technical incidents, cybersecurity
+events, service interruptions or regulatory matters affecting the White Label
+Solution, the Parties shall cooperate to ensure that communications remain
+accurate, consistent and technically correct.
+
+Neither Party shall publicly attribute responsibility for any incident before
+completing an appropriate joint technical assessment except where immediate
+disclosure is required by applicable law.
+
+
+10. REFERENCES
+
+Neither Party shall use the name, logo or trademarks of the other Party in customer
+references, press releases, case studies, interviews or marketing campaigns
+without prior written approval.
+
+Approval may be granted generally or for specific communications.
+The Parties acknowledge that references to the commercial relationship may
+require prior approval by both Parties.
+
+
+11. QUALITY STANDARDS
+
+The Distributor shall market the White Label Solution in a manner consistent with
+good commercial practice and with the reputation of enterprise financial software.
+The Distributor shall refrain from marketing practices capable of damaging the
+reputation of the Service or the Provider.
+
+The Provider may reasonably request correction of marketing materials that
+materially misrepresent the functionality, security, compliance or intended use of
+the Service.
+
+
+12. INTELLECTUAL PROPERTY PROTECTION
+
+The Distributor shall promptly notify the Provider upon becoming aware of any
+suspected infringement, unauthorised use, counterfeiting, piracy or misuse
+affecting the Intellectual Property Rights associated with NEXTREPORTING.
+
+The Provider shall determine the appropriate legal strategy in relation to any
+infringement affecting its Intellectual Property Rights.
+
+The Distributor shall provide reasonable cooperation where such cooperation is
+necessary for the protection or enforcement of those rights.
+
+
+13. EFFECT OF TERMINATION
+
+Upon termination of the Agreement, the Distributor shall discontinue the use of any
+trademarks, logos or other branding elements belonging to the Provider except
+where continued use is expressly authorised for the purpose of completing the
+agreed Transition Period.
+
+Marketing materials incorporating the Provider's branding shall be withdrawn within
+a reasonable period following termination.
+
+Nothing contained herein shall affect the continued servicing of existing End
+Customers during any agreed Transition Period.
+
+
+14. AMENDMENTS
+
+These Brand Guidelines may be updated by written agreement between the Parties.
+Minor operational adjustments that do not materially affect the Parties' legal rights
+may be agreed between the Parties' designated commercial representatives and
+recorded in writing.
+

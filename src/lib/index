@@ -1,0 +1,346 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 158 78% 3%;
+    --foreground: 165 30% 94%;
+    --card: 158 40% 6%;
+    --card-foreground: 165 30% 94%;
+    --popover: 158 40% 6%;
+    --popover-foreground: 165 30% 94%;
+    --primary: 153 100% 50%;
+    --primary-foreground: 158 78% 3%;
+    --secondary: 156 25% 14%;
+    --secondary-foreground: 165 30% 94%;
+    --muted: 156 25% 14%;
+    --muted-foreground: 158 15% 65%;
+    --accent: 153 100% 50%;
+    --accent-foreground: 158 78% 3%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 156 25% 14%;
+    --input: 156 25% 16%;
+    --ring: 153 100% 50%;
+    --chart-1: 153 100% 50%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --font-heading: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+ 
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+ 
+ 
+ 
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+ 
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+ 
+  html {
+    scroll-behavior: smooth;
+  }
+}
+ 
+@layer components {
+  .glass-panel {
+    background: rgba(26, 43, 38, 0.35);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 255, 133, 0.12);
+  }
+ 
+  .glass-panel-hover {
+    transition: backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .glass-panel-hover:hover {
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-color: rgba(0, 255, 133, 0.4);
+  }
+ 
+  .velocity-line {
+    background: linear-gradient(90deg, transparent, #00FF85, transparent);
+  }
+ 
+  .glow-emerald {
+    box-shadow: 0 0 40px rgba(0, 255, 133, 0.25);
+  }
+ 
+  .text-glow {
+    text-shadow: 0 0 30px rgba(0, 255, 133, 0.4);
+  }
+ 
+  .mono {
+    font-family: var(--font-mono);
+    letter-spacing: 0.05em;
+  }
+ 
+  .focus-ring:focus-visible {
+    outline: 2px solid #00FF85;
+    outline-offset: 4px;
+  }
+}
+ 
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .animate-fade-in {
+    animation: fadeIn 1s ease both;
+  }
+  .animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+ 
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+ 
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+ 
+  /* --- Cinematic 5s dive through the tunnel --- */
+ 
+  /* Base tunnel image: slow start, then hyperspace zoom with motion blur, then blow out */
+  @keyframes diveZoom {
+    0%   { transform: scale(1);   filter: blur(0px)  brightness(1);   }
+    30%  { transform: scale(2.2); filter: blur(2px)  brightness(1.1); }
+    60%  { transform: scale(6);   filter: blur(6px)  brightness(1.4); }
+    75%  { transform: scale(10);  filter: blur(12px) brightness(2);   }
+    82%  { transform: scale(14);  filter: blur(20px) brightness(3);   opacity: 1; }
+    88%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+ 
+  /* Central pulsing glow that becomes the "end of tunnel" light */
+  @keyframes diveGlow {
+    0%   { transform: translate(-50%, -50%) scale(0.3); opacity: 0;   }
+    30%  { transform: translate(-50%, -50%) scale(0.6); opacity: 0.4; }
+    60%  { transform: translate(-50%, -50%) scale(1.4); opacity: 0.9; }
+    75%  { transform: translate(-50%, -50%) scale(3);   opacity: 1;   }
+    82%  { transform: translate(-50%, -50%) scale(6);   opacity: 1;   }
+    88%  { transform: translate(-50%, -50%) scale(10);  opacity: 0;   }
+    100% { opacity: 0; }
+  }
+ 
+  /* Warp speed streaks — repeating conic gradient that spins & scales outward */
+  @keyframes diveStreaks {
+    0%   { transform: translate(-50%, -50%) scale(0.05) rotate(0deg);   opacity: 0;   }
+    15%  { opacity: 0.35; }
+    50%  { opacity: 0.6;  }
+    75%  { transform: translate(-50%, -50%) scale(6)    rotate(220deg); opacity: 0.9; }
+    88%  { opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(9)    rotate(360deg); opacity: 0; }
+  }
+ 
+  /* Radial vignette that grows darker as we approach the end */
+  @keyframes diveVignette {
+    0%   { opacity: 0.4; }
+    50%  { opacity: 0.6; }
+    75%  { opacity: 0.3; }
+    82%  { opacity: 0;   }
+    100% { opacity: 0;   }
+  }
+ 
+  /* Bright green→white flash right when we punch through the end */
+  @keyframes diveFlash {
+    0%,  70%  { opacity: 0; }
+    78%       { opacity: 1; }
+    85%       { opacity: 1; }
+    100%      { opacity: 0; }
+  }
+ 
+  /* Fade to black that stays black for the last beat, then reveals modal */
+  @keyframes diveFade {
+    0%,  75% { opacity: 0; }
+    88%      { opacity: 1; }
+    100%     { opacity: 1; }
+  }
+ 
+  /* Chromatic edge — slight color shift on the tunnel walls for depth */
+  @keyframes diveChroma {
+    0%   { opacity: 0; }
+    40%  { opacity: 0.4; }
+    75%  { opacity: 0.7; }
+    82%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @keyframes modalEnter {
+    0% { opacity: 0; transform: translateY(18px) scale(0.965); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes contentRise {
+    0% { opacity: 0; transform: translateY(14px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+ 
+  .animate-dive-zoom     { animation: diveZoom     5s cubic-bezier(0.55, 0, 0.85, 0.35) forwards; }
+  .animate-dive-glow     { animation: diveGlow     5s cubic-bezier(0.55, 0, 0.85, 0.35) forwards; }
+  .animate-dive-streaks  { animation: diveStreaks  5s cubic-bezier(0.55, 0, 0.85, 0.35) forwards; }
+  .animate-dive-vignette { animation: diveVignette 5s ease-in forwards; }
+  .animate-dive-flash    { animation: diveFlash    5s ease-out forwards; }
+  .animate-dive-fade     { animation: diveFade     5s ease-in forwards; }
+  .animate-dive-chroma   { animation: diveChroma   5s cubic-bezier(0.55, 0, 0.85, 0.35) forwards; }
+  .animate-modal-enter { animation: modalEnter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .animate-content-rise { animation: contentRise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+ 
+  /* ------- Igloo-inspired FX ------- */
+ 
+  /* Cursor-follow radial glow (uses --mx / --my CSS vars set in JS) */
+  .cursor-glow {
+    position: relative;
+    isolation: isolate;
+  }
+  .cursor-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      600px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(0, 255, 133, 0.18),
+      transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .cursor-glow:hover::before { opacity: 1; }
+ 
+  /* Concentric rings that expand outward */
+  @keyframes ringExpand {
+    0%   { transform: translate(-50%, -50%) scale(0.4); opacity: 0.9; }
+    100% { transform: translate(-50%, -50%) scale(2.6); opacity: 0; }
+  }
+  .ring-expand {
+    animation: ringExpand 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+ 
+  /* Slow conic spin for the outer aura */
+  @keyframes spinSlow {
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow { animation: spinSlow 8s linear infinite; }
+ 
+  /* Letter reveal – uses inline delay */
+  @keyframes charRise {
+    0%   { opacity: 0; transform: translateY(14px) rotateX(-40deg); filter: blur(4px); }
+    100% { opacity: 1; transform: translateY(0) rotateX(0);        filter: blur(0);   }
+  }
+  .char-rise {
+    display: inline-block;
+    animation: charRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transform-origin: 50% 100%;
+  }
+ 
+  /* Shimmer sweep across an element */
+  @keyframes shimmer {
+    0%   { transform: translateX(-120%) skewX(-12deg); }
+    100% { transform: translateX(220%)  skewX(-12deg); }
+  }
+  .shimmer-sweep {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+  .shimmer-sweep::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(0, 255, 133, 0.22),
+      transparent
+    );
+    animation: shimmer 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+ 
+  /* Reveal on scroll (paired with IntersectionObserver adding .in-view) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 
+  /* 3D tilt container (JS sets --rx / --ry) */
+  .tilt-3d {
+    transform: perspective(1000px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg));
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transform-style: preserve-3d;
+    will-change: transform;

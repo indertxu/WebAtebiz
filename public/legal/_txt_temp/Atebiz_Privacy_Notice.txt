@@ -1,0 +1,350 @@
+ATEBIZ · NEXTREPORTING
+
+Privacy Notice
+Version 1.0 · Julio 2026
+
+
+
+
+1. INTRODUCTION
+ATEBIZ ("ATEBIZ", "we", "our" or the "Company") is committed to protecting the privacy and
+personal data of individuals who interact with our business, our websites, our
+Software-as-a-Service platform ("NEXTREPORTING"), our products and our professional
+services.
+
+Respect for privacy is a fundamental component of our corporate governance and forms part of
+our commitment to transparency, accountability and responsible digital business practices.
+
+This Privacy Notice explains how we collect, use, disclose, retain and otherwise process
+Personal Data when individuals visit our websites, communicate with us, request information,
+enter into contractual relationships, attend events, access NEXTREPORTING as authorised
+users or otherwise interact with us in a professional or commercial context.
+
+We process Personal Data in accordance with Regulation (EU) 2016/679 ("GDPR"), applicable
+national data protection legislation, the ePrivacy framework and any other privacy legislation
+applicable to our activities.
+
+This Privacy Notice should be read together with our Cookie Policy, Data Processing Agreement
+and any privacy information specifically provided in connection with particular products, services
+or processing activities.
+
+
+2. WHO WE ARE
+Unless otherwise indicated, the Controller responsible for the Personal Data described in this
+Privacy Notice is:
+
+ATEBIZ
+Registered Office: C/ ALFREDO MARQUERIE, NUM 3 DR, PLANTA 11, PUERTA B — 28034
+MADRID (MADRID)
+Company Registration Number: B56666225
+Email: privacy@atebiz.com
+Website: www.atebiz.com
+
+Any questions concerning this Privacy Notice or the Processing of Personal Data may be
+addressed using the contact details set out above.
+
+
+3. OUR ROLE WHEN PROCESSING PERSONAL DATA
+Our role under Data Protection Law depends upon the context in which Personal Data is
+processed.
+
+Where we collect Personal Data for our own business purposes, including customer relationship
+management, contractual administration, invoicing, marketing communications, supplier
+management, recruitment, regulatory compliance or operation of our websites, we generally act
+as Controller.
+
+Where Personal Data is processed through the NEXTREPORTING platform exclusively on
+behalf of one of our customers, we generally act as Processor, processing Personal Data solely
+in accordance with the documented instructions of the relevant customer and the applicable
+Data Processing Agreement.
+
+Accordingly, where you access NEXTREPORTING as an authorised user of one of our
+customers, that customer will normally determine the purposes and means of the Processing of
+your Personal Data.
+
+If you wish to exercise your rights in relation to Personal Data processed within
+NEXTREPORTING on behalf of one of our customers, you should normally contact your
+organisation directly. We will provide reasonable assistance to our customers in responding to
+such requests where required under applicable Data Protection Law.
+
+
+4. CATEGORIES OF PERSONAL DATA
+The categories of Personal Data we Process depend upon the nature of our relationship with
+you.
+
+Depending upon the circumstances, we may Process identification data, professional contact
+details, business information, employer information, user account details, authentication
+credentials, billing and payment information, correspondence, contractual documentation,
+technical identifiers, device information, connection logs, usage information, support requests,
+event registration details and any information voluntarily provided during communications with
+us. Where strictly necessary for the provision of specific services, we may also Process financial
+information required for invoicing, payment verification or contractual administration.
+
+We do not intentionally collect or require special categories of Personal Data within the meaning
+of Article 9 GDPR through our websites or ordinary commercial communications.
+
+Individuals are requested not to provide sensitive Personal Data unless expressly requested or
+required for a specific lawful purpose.
+
+
+5. HOW WE COLLECT PERSONAL DATA
+We collect Personal Data directly from individuals when they contact us, complete forms
+available through our websites, request demonstrations of NEXTREPORTING, subscribe to
+newsletters, register for webinars or events, enter into contractual relationships, request
+customer support or otherwise communicate with us.
+
+We also collect certain technical information automatically through our websites and online
+services, including information relating to devices, browsers, operating systems, IP addresses,
+security events and the use of our digital services.
+
+Where permitted by law, we may also obtain limited business contact information from publicly
+available professional sources, business partners or publicly accessible corporate directories for
+legitimate business development purposes.
+Whenever Personal Data is obtained indirectly, we take reasonable steps to provide the
+information required by applicable Data Protection Law unless a legal exemption applies.
+
+
+6. PURPOSES OF PROCESSING
+We Process Personal Data only where this is necessary for a legitimate and clearly identified
+purpose.
+
+Depending upon the nature of our relationship with you, Personal Data may be Processed to
+establish and manage contractual relationships, provide access to NEXTREPORTING,
+administer customer accounts, authenticate authorised users, deliver technical support, process
+payments, manage subscriptions, organise demonstrations, provide Professional Services,
+communicate with customers and business partners, respond to enquiries, organise training
+sessions and events, improve our products and services, maintain the security of our information
+systems, prevent fraud, investigate security incidents, protect our legal rights and comply with
+applicable legal and regulatory obligations. Where permitted by applicable law, we may also use
+Personal Data to communicate information concerning our products, services, publications,
+webinars, events and other business initiatives that may be relevant to existing or prospective
+customers.
+
+We do not use Personal Data for purposes incompatible with those for which it was originally
+collected.
+
+
+7. LEGAL BASES FOR PROCESSING
+Our Processing activities are carried out only where supported by one or more lawful bases
+recognised under Article 6 GDPR.
+
+Where Processing is necessary for the performance of a contract or to take steps at your
+request prior to entering into a contract, we rely upon Article 6(1)(b) GDPR. Where Processing is
+necessary to comply with legal obligations applicable to our business, including accounting,
+taxation, anti-money laundering, corporate governance or regulatory compliance requirements,
+we rely upon Article 6.1.c) GDPR.
+
+Where Processing is necessary for the purposes of our legitimate interests, including the
+operation and security of our business, customer relationship management, product
+improvement, fraud prevention, network security, defence of legal claims or business
+development, we rely upon Article 6.1.f) GDPR following an assessment designed to ensure that
+such interests are not overridden by your rights and freedoms.
+
+Where consent is required by law, including for certain electronic marketing communications or
+the use of non-essential cookies, we rely upon Article 6.1.a) GDPR.
+
+Where consent constitutes the legal basis for Processing, it may be withdrawn at any time
+without affecting the lawfulness of Processing carried out before its withdrawal.
+
+
+8. LEGITIMATE INTERESTS
+Where we rely upon Article 6.1.f) GDPR as the legal basis for Processing, we do so only after
+carefully assessing that our legitimate interests are not overridden by the interests, fundamental
+rights or freedoms of the individuals concerned.
+
+Our legitimate interests may include operating and administering our business efficiently,
+providing and improving our products and services, maintaining customer relationships, ensuring
+network and information security, preventing fraud and misuse, protecting our legal rights,
+managing contractual relationships, conducting internal reporting, responding to legal claims and
+communicating with existing business contacts regarding products and services that may
+reasonably be expected within the context of an existing commercial relationship.
+
+Where appropriate, we conduct documented balancing assessments before relying upon
+legitimate interests as the legal basis for Processing.
+
+
+9. RECIPIENTS OF PERSONAL DATA
+We do not sell, rent or otherwise commercialise Personal Data.
+
+Personal Data may be disclosed only where such disclosure is necessary for the purposes
+described in this Privacy Notice or where disclosure is required by applicable law.
+
+Depending upon the circumstances, Personal Data may be shared with carefully selected
+providers of cloud infrastructure, hosting services, communication platforms, customer
+relationship management systems, cybersecurity services, payment providers, professional
+advisers, external auditors, insurers and other service providers supporting the operation of our
+business.
+
+Where Personal Data is disclosed to service providers acting on our behalf, they shall Process
+such information exclusively in accordance with our documented instructions and under written
+agreements complying with Article 28 GDPR where applicable.
+
+Personal Data may also be disclosed to competent judicial, regulatory, supervisory or law
+enforcement authorities where required by applicable law or where necessary for the
+establishment, exercise or defence of legal claims.
+
+
+10. INTERNATIONAL DATA TRANSFERS
+As a general principle, Personal Data is processed within the European Economic Area.
+
+However, certain service providers supporting the operation of our business may Process
+Personal Data from jurisdictions located outside the European Economic Area.
+
+Whenever Personal Data is transferred internationally, we ensure that such transfers comply
+with Chapter V of the GDPR and that an essentially equivalent level of protection is maintained.
+Depending upon the circumstances, international transfers may rely upon an adequacy decision
+adopted by the European Commission pursuant to Article 45 GDPR; the Standard Contractual
+Clauses adopted by the European Commission pursuant to Article 46 GDPR; Binding Corporate
+Rules (BCR) approved by the competent supervisory authorities; approved codes of conduct or
+certification mechanisms where available; or any other lawful transfer mechanism recognised
+under applicable Data Protection Law.
+
+Where the legal framework of the recipient country requires additional safeguards, we implement
+supplementary contractual, organisational and technical measures designed to ensure that
+transferred Personal Data continues to benefit from a level of protection essentially equivalent to
+that guaranteed within the European Union. Such supplementary measures may include
+encryption during transmission and storage, strict access management, contractual
+transparency obligations, data minimisation, pseudonymisation where appropriate, enhanced
+security monitoring and documented transfer risk assessments.
+
+We periodically review international transfers in light of legislative developments, guidance
+issued by the European Data Protection Board, decisions of the Court of Justice of the European
+Union and applicable regulatory requirements.
+
+Information regarding the safeguards applicable to specific international transfers may be
+requested using the contact details provided in this Privacy Notice.
+
+
+11. BUSINESS TRANSACTIONS
+As our business evolves, we may participate in corporate transactions including mergers,
+acquisitions, investments, corporate reorganisations, joint ventures, transfers of assets or similar
+business operations.
+
+Where Personal Data forms part of the assets involved in such transactions, we shall ensure that
+appropriate confidentiality obligations and data protection safeguards continue to apply.
+
+Any successor entity shall remain bound by obligations substantially equivalent to those
+described in this Privacy Notice unless individuals are otherwise informed in accordance with
+applicable law.
+
+
+12. INFORMATION SECURITY AND ACCOUNTABILITY
+We maintain a comprehensive privacy and information security governance framework designed
+to ensure compliance with applicable Data Protection Law and recognised industry practices.
+Our privacy programme incorporates the principles of accountability, privacy by design, privacy
+by default, confidentiality, integrity, availability and continuous improvement.
+
+Technical and organisational measures are selected through a risk-based methodology taking
+into account the nature of the Personal Data processed, the purposes of Processing and the
+risks presented to the rights and freedoms of individuals.
+
+Our security programme includes governance controls, access management, authentication
+mechanisms, encryption, vulnerability management, secure software development, supplier risk
+management, monitoring, incident response, business continuity planning and periodic reviews
+of security effectiveness.
+
+We regularly review our policies, procedures and technical safeguards in response to
+technological developments, emerging cybersecurity threats and changes in applicable
+legislation.
+
+
+13. DATA RETENTION
+We retain Personal Data only for so long as necessary to fulfil the purposes for which it was
+collected or to comply with applicable legal, contractual or regulatory obligations.
+Retention periods vary depending upon the nature of the Processing, the applicable legal
+requirements and the operational needs of our business.
+
+Where Personal Data is no longer required, it is securely deleted, anonymised or otherwise
+rendered permanently inaccessible unless continued retention is required by applicable law or is
+necessary for the establishment, exercise or defence of legal claims.
+
+We periodically review retained Personal Data to ensure that it remains relevant, accurate and
+necessary for the purposes for which it is processed.
+
+
+14. YOUR RIGHTS
+Subject to applicable law, individuals may exercise the rights recognised under the GDPR,
+including the right to obtain confirmation as to whether Personal Data concerning them is being
+processed, to access such Personal Data, to request rectification of inaccurate information, to
+request erasure where applicable, to request restriction of Processing, to object to certain
+Processing activities and to receive Personal Data in a structured, commonly used and
+machine-readable format where the right to data portability applies. Where Processing is based
+upon consent, consent may be withdrawn at any time without affecting the lawfulness of
+Processing carried out prior to its withdrawal. We may request reasonable evidence of identity
+before responding to requests in order to protect Personal Data against unauthorised disclosure.
+
+Requests shall be handled within the time limits established by applicable Data Protection Law.
+
+
+15. AUTOMATED DECISION-MAKING
+We do not carry out automated decision-making producing legal effects or similarly significant
+effects within the meaning of Article 22 GDPR unless expressly notified to the relevant
+individuals and authorised by applicable law.
+
+Analytical functionalities incorporated into NEXTREPORTING are intended to assist business
+users in interpreting information and do not replace human decision- making.
+
+Any future implementation of artificial intelligence or automated analytical functionalities
+involving Personal Data shall be subject to appropriate governance, human oversight and
+compliance with applicable legal requirements.
+
+
+16. DATA ACCURACY
+Individuals are responsible for ensuring that the Personal Data provided to us is accurate,
+complete and kept reasonably up to date.
+
+Where Personal Data becomes inaccurate or incomplete, we encourage individuals to notify us
+promptly so that appropriate corrections may be made.
+
+
+17. MARKETING COMMUNICATIONS
+Where permitted by applicable law, we may send information concerning our products, services,
+events, publications or business activities.
+Electronic marketing communications shall be sent only where supported by an appropriate legal
+basis, including consent where required or the legitimate marketing exemption applicable to
+existing customer relationships.
+
+Every marketing communication provides an appropriate mechanism enabling recipients to
+unsubscribe or object to future communications.
+
+
+18. CHILDREN
+Our products and services are intended exclusively for business and professional users.
+
+We do not knowingly collect Personal Data relating to children.
+
+If we become aware that Personal Data relating to a child has been collected without appropriate
+legal grounds, we shall take reasonable steps to delete such information without undue delay.
+
+
+19. COMPLAINTS
+If you have concerns regarding our Processing of your Personal Data, we encourage you to
+contact us in the first instance so that we may seek to resolve the matter promptly and
+transparently.
+
+Without prejudice to any other administrative or judicial remedy, you also have the right to lodge
+a complaint with the competent supervisory authority in the Member State of your habitual
+residence, place of work or place of the alleged infringement.
+
+
+20. CHANGES TO THIS PRIVACY NOTICE
+We may amend this Privacy Notice from time to time in order to reflect changes in applicable
+legislation, regulatory guidance, judicial decisions, technological developments, our business
+operations or the Services we provide.
+
+The most recent version shall always be published through the appropriate communication
+channels together with its effective date.
+
+Where changes materially affect the way in which Personal Data is Processed, we shall provide
+appropriate notice and, where required by law, obtain renewed consent before such changes
+take effect.
+
+
+21. CONTACT
+Privacy Office — Atebiz Solutions S.L.
+Email: privacy@atebiz.com
+Address: C/ ALFREDO MARQUERIE, NUM 3 DR, PLANTA 11, PUERTA B — 28034 MADRID
+(MADRID)
+
+Where appointed, our Data Protection Officer may also be contacted using the above details.
+

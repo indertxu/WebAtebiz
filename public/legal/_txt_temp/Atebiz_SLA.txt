@@ -1,0 +1,222 @@
+ATEBIZ · NEXTREPORTING
+
+Service Level Agreement (SLA)
+Version 1.0 · Julio 2026
+
+
+
+
+1. PURPOSE
+This Service Level Agreement ("SLA") forms an integral part of the Agreement entered into
+between the Provider and the Customer for the provision of the ATEBIZ Software-as-a-Service
+platform.
+
+Its purpose is to define the operational service commitments applicable to the Service, including
+availability targets, support services, incident management procedures, maintenance activities
+and service restoration objectives.
+
+This SLA establishes operational targets only. It does not constitute a guarantee that the Service
+will be uninterrupted or error-free and shall not be interpreted as creating strict liability for every
+service interruption.
+
+Unless expressly agreed otherwise in an Order Form, this SLA applies to all standard
+commercial subscriptions.
+
+
+2. SERVICE AVAILABILITY
+The Provider shall use commercially reasonable efforts to ensure the continuous availability of
+the Service throughout the Subscription Term.
+
+The target Monthly Uptime Percentage shall be 99.5%, excluding Excluded Downtime as
+defined in this SLA. The Platform availability (uptime) is defined as 99.5% measured over a
+period of one calendar year, excluding planned maintenance.
+
+Availability shall be measured on a calendar-month basis.
+
+For the purposes of this SLA, the Service shall be considered available whenever Authorised
+Users are able to authenticate successfully and access the core functionality of ATEBIZ through
+the production environment.
+
+Temporary degradation affecting non-essential features shall not, by itself, constitute
+unavailability.
+
+Likewise, temporary reductions in system performance that do not materially prevent ordinary
+use of the Service shall not be treated as downtime. 3. EXCLUDED DOWNTIME
+
+Downtime shall not be taken into account when calculating Monthly Uptime where the
+interruption results from circumstances outside the Provider's reasonable control.
+
+Excluded Downtime includes scheduled maintenance, emergency maintenance required to
+address security risks, failures of telecommunications providers, failures of cloud infrastructure
+providers, internet outages, denial-of-service attacks, force majeure events, failures originating
+from third-party software, Customer infrastructure failures, Customer configuration errors,
+misuse of the Service or suspension carried out in accordance with the Agreement.
+Downtime resulting from beta features, trial modules or experimental functionalities shall likewise
+be excluded.
+
+
+4. PLANNED MAINTENANCE
+The Provider may perform planned maintenance whenever reasonably necessary to preserve
+the security, stability, availability or performance of the Service.
+
+Whenever reasonably practicable, planned maintenance shall be scheduled outside normal
+European business hours.
+
+The Provider shall use reasonable efforts to provide prior notice of significant planned
+maintenance likely to affect Service availability.
+
+Routine maintenance activities producing no material interruption of the Service may be
+performed without prior notice.
+
+The Customer acknowledges that preventive maintenance forms an essential component of a
+secure cloud environment.
+
+
+5. EMERGENCY MAINTENANCE
+Where immediate intervention is reasonably necessary to prevent security incidents, preserve
+the integrity of the Service, mitigate cybersecurity threats or protect Customer Data, the Provider
+may perform emergency maintenance without prior notice.
+
+The Provider shall endeavour to minimise disruption and restore the Service as quickly as
+reasonably practicable.
+
+Emergency maintenance shall not constitute a breach of the Agreement. 6. SERVICE DESK
+Technical support shall be available through the support channels designated by the Provider.
+
+Support requests may be submitted electronically at any time.
+
+Standard support shall be provided during the Provider's published business hours. Enterprise
+Support, Premium Support or enhanced response commitments shall apply only where
+expressly purchased under the applicable Order Form.
+
+The Customer shall designate appropriate technical contacts authorised to communicate with
+the Provider regarding operational matters.
+
+The Provider may require verification of identity before disclosing information concerning the
+Customer's environment.
+
+
+7. INCIDENT MANAGEMENT
+The Provider shall maintain an incident management process designed to ensure the prompt
+recording, classification, investigation and resolution of operational incidents.
+
+Each reported incident shall be assigned an appropriate priority according to its operational
+impact and urgency.
+Incident priorities may be revised during the investigation where additional information becomes
+available.
+
+The Provider shall use commercially reasonable efforts to restore the affected functionality within
+the shortest practicable timeframe.
+
+Response times represent the time within which the Provider will commence investigation of an
+incident.
+
+Response times do not constitute guaranteed resolution times.
+
+
+8. INCIDENT CLASSIFICATION
+The Provider reserves the right to reclassify incidents following technical assessment.
+
+
+9. RESPONSE TARGETS
+Following validation of an incident, the Provider shall use commercially reasonable efforts to
+commence investigation within 1 Business Day.
+
+The response target apply only where sufficient diagnostic information has been provided by the
+Customer.
+
+
+10. RESTORATION OBJECTIVES
+The Provider shall use commercially reasonable efforts to restore affected Services as soon as
+reasonably practicable.
+
+Because software incidents vary significantly in complexity, no guaranteed restoration times are
+provided.
+
+Where immediate correction is not technically feasible, the Provider may implement temporary
+workarounds while preparing a permanent solution.
+
+Permanent corrections may be delivered through future software releases where appropriate.
+
+
+11. CUSTOMER RESPONSIBILITIES
+The Provider's obligations under this SLA are conditional upon the Customer providing
+reasonable cooperation. The Customer shall promptly report incidents using the designated
+support channels and shall provide all information reasonably necessary to reproduce and
+investigate the reported issue.
+
+The Customer shall maintain compatible internet connectivity, supported browsers, appropriate
+internal security measures and qualified personnel responsible for interacting with the Provider.
+
+Failure to provide reasonable cooperation may affect the Provider's ability to meet the response
+targets established in this SLA.
+
+
+12. BACKUPS
+The Provider shall maintain backup procedures designed to protect production data against
+accidental loss.
+
+Backups shall be performed in accordance with the Provider's internal operational policies.
+
+Backup retention periods may vary depending upon operational requirements and disaster
+recovery procedures.
+
+Backups are maintained for business continuity purposes and shall not be regarded as an
+archival service for the Customer.
+
+The Customer remains responsible for exporting and retaining any information it wishes to
+preserve independently of the Service.
+
+
+13. BUSINESS CONTINUITY
+The Provider shall maintain documented business continuity and disaster recovery procedures
+appropriate to the nature of the Service.
+
+Such procedures shall be periodically reviewed and tested.
+
+The objective of these procedures is to minimise operational disruption following significant
+service failures.
+
+The existence of business continuity procedures shall not constitute a contractual guarantee that
+any particular recovery timeframe will always be achieved.
+
+
+14. SECURITY INCIDENTS
+Security incidents shall be managed in accordance with the Provider's Incident Response Plan.
+
+Where a confirmed Personal Data Breach occurs, notifications shall be managed in accordance
+with the Data Processing Agreement.
+
+Operational security incidents not affecting Personal Data may be managed separately where
+appropriate.
+
+The Provider shall maintain procedures for containment, investigation, eradication, recovery and
+post-incident review.
+
+
+15. SERVICE CREDITS
+Except where expressly agreed in an Enterprise Order Form, service credits shall not apply
+automatically.
+
+Where the Parties have agreed service credits, such credits shall constitute the Customer's sole
+financial remedy for any failure to achieve the availability targets established under this SLA.
+
+Service credits shall never exceed the Subscription Fees attributable to the affected month.
+
+Service credits shall not apply where downtime constitutes Excluded Downtime under this SLA.
+
+
+16. CONTINUOUS IMPROVEMENT
+The Provider continuously reviews operational performance, cybersecurity risks, customer
+feedback and technological developments in order to improve the quality, resilience and
+efficiency of the Service.
+
+Nothing contained in this SLA shall prevent the Provider from modifying its operational
+procedures where such modifications improve the Service or respond to evolving technological,
+regulatory or security requirements.
+
+
+17. GOVERNING LAW
+This Service Level Agreement forms an integral part of the Agreement and shall be governed by
+the governing law and dispute resolution provisions contained therein.
+

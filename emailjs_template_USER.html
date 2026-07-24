@@ -1,0 +1,175 @@
+<!-- =====================================================
+     PLANTILLA EMAILJS — CONFIRMACIÓN AL CLIENTE
+     Pegar este HTML en EmailJS → Templates → nueva plantilla
+     Asunto sugerido: Hemos recibido tu mensaje — Atebiz
+     "To Email": {{to_email}}
+     "From Name": Atebiz
+     "Reply To": info@atebiz.com
+     ===================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="margin:0;padding:0;background:#020e07;font-family:'Inter',Arial,sans-serif;color:#e5f5ec;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#020e07;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#0a1a12;border:1px solid #1a3d2b;border-radius:20px;overflow:hidden;">
+
+          <!-- Header con logo y línea de acento -->
+          <tr>
+            <td style="padding:40px 40px 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <div style="display:inline-block;background:#00ff85;color:#020e07;font-weight:700;font-size:20px;padding:12px 16px;border-radius:12px;line-height:1;">A</div>
+                    <span style="display:inline-block;color:#ffffff;font-size:20px;font-weight:700;margin-left:10px;vertical-align:middle;">atebiz</span>
+                  </td>
+                </tr>
+              </table>
+              <div style="height:1px;background:linear-gradient(90deg,transparent,#00ff85,transparent);margin-top:28px;opacity:0.5;"></div>
+            </td>
+          </tr>
+
+          <!-- Título -->
+          <tr>
+            <td style="padding:36px 40px 8px 40px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;color:#00ff85;text-transform:uppercase;margin-bottom:14px;">CONFIRMACIÓN RECIBIDA</div>
+              <h1 style="margin:0;font-size:30px;line-height:1.15;color:#ffffff;font-weight:700;letter-spacing:-0.02em;">
+                Hemos recibido tu mensaje, <span style="color:#00ff85;">{{from_name}}</span>.
+              </h1>
+            </td>
+          </tr>
+
+          <!-- Intro -->
+          <tr>
+            <td style="padding:20px 40px 8px 40px;">
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#b8d0c3;">
+                Gracias por escribirnos. Nuestro equipo revisará tu mensaje y te responderá en menos de <strong style="color:#ffffff;">24 horas laborables</strong>. Este correo es solo una confirmación automática de que tu solicitud está en cola.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Bloque resumen -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;color:#00ff85;text-transform:uppercase;margin-bottom:12px;">RESUMEN DE TU MENSAJE</div>
+              <table width="100%" cellpadding="0" cellspacing="0" style="background:#0d2419;border:1px solid #1a3d2b;border-radius:14px;">
+                <tr>
+                  <td style="padding:16px 20px;border-bottom:1px solid #1a3d2b;">
+                    <div style="font-size:11px;color:#7fa895;margin-bottom:4px;">Enviado por</div>
+                    <div style="font-size:14px;color:#ffffff;font-weight:600;">{{from_name}} · {{from_email}}</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 20px;border-bottom:1px solid #1a3d2b;">
+                    <div style="font-size:11px;color:#7fa895;margin-bottom:4px;">Fecha de recepción</div>
+                    <div style="font-size:14px;color:#ffffff;">{{fecha}} (hora de Madrid)</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:16px 20px;">
+                    <div style="font-size:11px;color:#7fa895;margin-bottom:6px;">Mensaje</div>
+                    <div style="font-size:14px;line-height:1.55;color:#e5f5ec;white-space:pre-wrap;">{{message}}</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Bloque "qué pasa ahora" -->
+          <tr>
+            <td style="padding:28px 40px 8px 40px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;color:#00ff85;text-transform:uppercase;margin-bottom:14px;">QUÉ PASA AHORA</div>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding:0 0 14px 0;vertical-align:top;">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width:28px;vertical-align:top;">
+                          <div style="width:22px;height:22px;border-radius:50%;background:#00ff85;color:#020e07;font-weight:700;font-size:12px;text-align:center;line-height:22px;">1</div>
+                        </td>
+                        <td style="padding-left:12px;color:#b8d0c3;font-size:14px;line-height:1.55;">
+                          Un miembro del equipo Atebiz revisa tu mensaje y prepara una respuesta a medida.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:0 0 14px 0;vertical-align:top;">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width:28px;vertical-align:top;">
+                          <div style="width:22px;height:22px;border-radius:50%;background:#00ff85;color:#020e07;font-weight:700;font-size:12px;text-align:center;line-height:22px;">2</div>
+                        </td>
+                        <td style="padding-left:12px;color:#b8d0c3;font-size:14px;line-height:1.55;">
+                          Te contactamos por email en menos de 24 horas laborables desde <span style="color:#ffffff;">info@atebiz.com</span>.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align:top;">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width:28px;vertical-align:top;">
+                          <div style="width:22px;height:22px;border-radius:50%;background:#00ff85;color:#020e07;font-weight:700;font-size:12px;text-align:center;line-height:22px;">3</div>
+                        </td>
+                        <td style="padding-left:12px;color:#b8d0c3;font-size:14px;line-height:1.55;">
+                          Si tu consulta es urgente, puedes responder directamente a este correo y llegará a nuestro equipo.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Separador -->
+          <tr>
+            <td style="padding:32px 40px 0 40px;">
+              <div style="height:1px;background:#1a3d2b;"></div>
+            </td>
+          </tr>
+
+          <!-- Firma -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <p style="margin:0 0 6px 0;font-size:15px;color:#e5f5ec;line-height:1.55;">
+                Un saludo,
+              </p>
+              <p style="margin:0;font-size:15px;color:#ffffff;font-weight:600;">
+                El equipo de Atebiz
+              </p>
+              <p style="margin:4px 0 0 0;font-size:13px;color:#7fa895;">
+                Inteligencia financiera a la velocidad del pensamiento.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:28px 40px 36px 40px;">
+              <div style="border-top:1px solid #1a3d2b;padding-top:20px;">
+                <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#5a7d6b;line-height:1.6;">
+                  ATEBIZ · atebiz.com<br>
+                  info@atebiz.com · sales@atebiz.com
+                </div>
+                <div style="font-size:11px;color:#5a7d6b;margin-top:12px;line-height:1.5;">
+                  Este correo se envía automáticamente al enviar el formulario de contacto en atebiz.com. Si no reconoces esta solicitud, ignora este mensaje.
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
