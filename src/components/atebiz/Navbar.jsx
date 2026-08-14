@@ -1,25 +1,52 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
 
-const links = [
-  { label: "Productos", to: "/productos" },
-  { label: "Velocidad", to: "/velocidad" },
-  { label: "Empresa", to: "/empresa" },
-  { label: "Legal", to: "/legal" },
-  { label: "Contacto", to: "/contacto" },
-];
+const START_TRIAL_URL = "https://konsolidator-iberia-reporting.vercel.app/";
 
 export default function Navbar() {
+  const { t, lang, setLang } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = useLocation();
+
+  const links = [
+    { label: t.navbar.productos, to: "/productos" },
+    { label: t.navbar.velocidad, to: "/velocidad" },
+    { label: t.navbar.empresa, to: "/empresa" },
+    { label: t.navbar.legal, to: "/legal" },
+    { label: t.navbar.contacto, to: "/contacto" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const LangSwitch = ({ compact = false }) => (
+    <div className={`flex items-center gap-0.5 p-0.5 rounded-full border border-primary/25 bg-background/40 ${compact ? "" : ""}`}>
+      <button
+        onClick={() => setLang("es")}
+        className={`px-2.5 py-1 rounded-full text-[11px] font-bold mono tracking-wider transition-all focus-ring ${
+          lang === "es" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+        }`}
+        aria-label="Cambiar a español"
+      >
+        ES
+      </button>
+      <button
+        onClick={() => setLang("en")}
+        className={`px-2.5 py-1 rounded-full text-[11px] font-bold mono tracking-wider transition-all focus-ring ${
+          lang === "en" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+        }`}
+        aria-label="Switch to English"
+      >
+        EN
+      </button>
+    </div>
+  );
 
   return (
     <header
@@ -47,18 +74,22 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            to="/contacto"
-            className="text-sm px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring"
+          <LangSwitch />
+          <a
+            href={START_TRIAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-1.5 text-sm px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring"
           >
-            Iniciar prueba
-          </Link>
+            {t.navbar.iniciarPrueba}
+            <ExternalLink size={13} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </a>
         </div>
 
         <button
           className="md:hidden text-foreground focus-ring rounded-md"
           onClick={() => setOpen(!open)}
-          aria-label="Menú"
+          aria-label={t.navbar.menu}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -76,13 +107,19 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            to="/contacto"
+          <div className="flex justify-start">
+            <LangSwitch />
+          </div>
+          <a
+            href={START_TRIAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="text-sm px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium text-center"
+            className="inline-flex items-center justify-center gap-1.5 text-sm px-5 py-2 rounded-full bg-primary text-primary-foreground font-medium text-center"
           >
-            Iniciar prueba
-          </Link>
+            {t.navbar.iniciarPrueba}
+            <ExternalLink size={13} />
+          </a>
         </div>
       )}
     </header>

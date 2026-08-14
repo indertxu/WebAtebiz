@@ -2,11 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
+import { useI18n } from "@/lib/i18n";
 
 const DATA_CORE =
   "https://media.base44.com/images/public/6a61c4e27f96d740c2107076/9d6e82ee0_generated_d7e4c5ec.png";
 
 export default function Hero() {
+  const { t } = useI18n();
   const coreRef = useRef(null);
 
   useEffect(() => {
@@ -37,41 +39,26 @@ export default function Hero() {
         <div className="animate-fade-up">
           <div className="text-xs font-medium text-primary/80 tracking-wide uppercase mb-6 flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" />
-            Inteligencia financiera SaaS
+            {t.hero.badge}
           </div>
           <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight">
-            Inteligencia financiera a la <span className="text-primary text-glow">velocidad del pensamiento</span>
+            {t.hero.title1} <span className="text-primary text-glow">{t.hero.titleHighlight}</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Atebiz es una compañía de software financiero que desarrolla un ecosistema de productos para
-            equipos de finanzas exigentes: <span className="text-foreground">reporting</span>,
-            <span className="text-foreground"> análisis</span>,
-            <span className="text-foreground"> planificación</span> y
-            <span className="text-foreground"> gestión</span> — todo en una misma plataforma, con la
-            velocidad y precisión de un motor institucional.
+            {t.hero.desc}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link
-              to="/contacto"
+              to="/productos"
               className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring"
             >
-              Inicializar Atebiz
+              {t.hero.verProductos}
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              to="/productos"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-foreground hover:border-primary transition-all focus-ring"
-            >
-              Ver productos
             </Link>
           </div>
 
           <div className="mt-12 flex gap-10">
-            {[
-              { val: "4.2s", label: "Auditoría completa" },
-              { val: "99.9%", label: "Precisión" },
-              { val: "+1.2k", label: "Empresas activas" },
-            ].map((s) => (
+            {t.hero.stats.map((s) => (
               <div key={s.label}>
                 <div className="font-heading text-2xl font-bold text-primary">{s.val}</div>
                 <div className="mono text-xs text-muted-foreground mt-1">{s.label}</div>

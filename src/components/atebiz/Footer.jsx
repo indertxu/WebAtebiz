@@ -1,35 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const cols = [
-  {
-    title: "Productos",
-    links: [
-      { label: "Next Reporting", to: "/productos" },
-      { label: "Velocidad", to: "/velocidad" },
-      { label: "Precios", to: "/contacto" },
-    ],
-  },
-  {
-    title: "Empresa",
-    links: [
-      { label: "Sobre nosotros", to: "/empresa" },
-      { label: "Contacto", to: "/contacto" },
-      { label: "Carreras", to: "/empresa" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Legal Hub", to: "/legal" },
-      { label: "Privacidad", to: "/legal" },
-      { label: "Términos", to: "/legal" },
-      { label: "Seguridad", to: "/legal" },
-    ],
-  },
-];
+import { useI18n } from "@/lib/i18n";
 
 export default function Footer() {
+  const { t } = useI18n();
+
   return (
     <footer className="relative border-t border-border pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
@@ -40,8 +15,7 @@ export default function Footer() {
               <span className="font-heading font-bold text-xl tracking-tight">atebiz</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              Inteligencia financiera a la velocidad del pensamiento. Software de grado institucional para empresas
-              que se mueven rápido.
+              {t.footer.tagline}
             </p>
             <div className="text-xs text-muted-foreground mt-6 space-y-1">
               <a href="mailto:info@atebiz.com" className="block hover:text-primary transition-colors">
@@ -53,7 +27,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {cols.map((c) => (
+          {t.footer.columns.map((c) => (
             <div key={c.title}>
               <h4 className="mono text-xs text-primary/80 mb-4">{c.title.toUpperCase()}</h4>
               <ul className="space-y-3">
@@ -74,8 +48,8 @@ export default function Footer() {
 
         <div className="h-px velocity-line opacity-30 mb-6" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="mono text-xs text-muted-foreground">© 2026 Atebiz. Todos los derechos reservados.</p>
-          <p className="mono text-xs text-muted-foreground">Construido con precisión institucional.</p>
+          <p className="mono text-xs text-muted-foreground">{t.footer.copyright}</p>
+          <p className="mono text-xs text-muted-foreground">{t.footer.tagline2}</p>
         </div>
       </div>
     </footer>

@@ -2,19 +2,7 @@ import React, { useState } from "react";
 import { Mail, Check, ArrowRight, Loader2, AlertCircle } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { LOGO_DATA_URI } from "@/lib/logo-data";
-
-const contacts = [
-  {
-    email: "info@atebiz.com",
-    label: "Información general",
-    desc: "Dudas sobre la plataforma, integraciones y soporte.",
-  },
-  {
-    email: "sales@atebiz.com",
-    label: "Ventas",
-    desc: "Planes, precios y demos para tu empresa.",
-  },
-];
+import { useI18n } from "@/lib/i18n";
 
 // EmailJS config — se lee del .env
 const SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -132,6 +120,8 @@ function buildClientHtml({ name, email, message, fecha }) {
 }
 
 export default function Contacto() {
+  const { t } = useI18n();
+  const tr = t.contacto;
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
   const [errorMsg, setErrorMsg] = useState("");
@@ -142,9 +132,7 @@ export default function Contacto() {
 
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       setStatus("error");
-      setErrorMsg(
-        "Configuración de EmailJS incompleta. Revisa el archivo .env."
-      );
+      setErrorMsg(tr.errorConfig);
       return;
     }
 
@@ -172,7 +160,7 @@ export default function Contacto() {
         TEMPLATE_ID,
         {
           to_email: "info@atebiz.com",
-          email_subject: `Nuevo mensaje de contacto — ${data.name}`,
+          email_subject: tr.subjectAdmin(data.name),
           message_html: buildAdminHtml(data),
         },
         { publicKey: PUBLIC_KEY }
@@ -184,7 +172,7 @@ export default function Contacto() {
         TEMPLATE_ID,
         {
           to_email: form.email,
-          email_subject: `Hemos recibido tu mensaje — Atebiz`,
+          email_subject: tr.subjectUser,
           message_html: buildClientHtml(data),
         },
         { publicKey: PUBLIC_KEY }
@@ -194,9 +182,7 @@ export default function Contacto() {
     } catch (err) {
       console.error("EmailJS error:", err);
       setStatus("error");
-      setErrorMsg(
-        err?.text || "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a info@atebiz.com."
-      );
+      setErrorMsg(err?.text || tr.errorGeneric);
     }
   };
 
@@ -206,18 +192,18 @@ export default function Contacto() {
       <div className="relative max-w-5xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="text-xs font-medium text-primary/80 tracking-wide uppercase mb-4">
-            Contacto
+            {tr.tag}
           </div>
           <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight mb-4">
-            Hablemos de tu <span className="text-primary text-glow">próximo movimiento</span>.
+            {tr.title1} <span className="text-primary text-glow">{tr.titleHighlight}</span>{tr.title2}
           </h1>
           <p className="text-muted-foreground text-lg">
-            Escríbenos directamente y te responderemos en menos de 24 horas.
+            {tr.desc}
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5 mb-14">
-          {contacts.map((c) => (
+          {tr.contacts.map((c) => (
             <a
               key={c.email}
               href={`mailto:${c.email}`}
@@ -234,53 +220,50 @@ export default function Contacto() {
         </div>
 
         <div className="glass-panel rounded-3xl p-6 sm:p-10 max-w-2xl mx-auto">
-          <h2 className="font-heading font-bold text-2xl tracking-tight mb-6">Envíanos un mensaje</h2>
+          <h2 className="font-heading font-bold text-2xl tracking-tight mb-6">{tr.formTitle}</h2>
           {status === "sent" ? (
             <div className="flex flex-col items-start gap-3 px-4 py-6">
               <div className="flex items-center gap-3 text-primary">
                 <Check size={20} />
-                <span className="text-sm font-medium">
-                  ¡Gracias! Hemos recibido tu mensaje.
-                </span>
+                <span className="text-sm font-medium">{tr.sentTitle}</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Te hemos enviado una confirmación a <span className="text-foreground">{form.email}</span>. Nuestro equipo te
-                contactará en menos de 24 horas.
+                {tr.sentDesc1} <span className="text-foreground">{form.email}</span>{tr.sentDesc2}
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="text-xs text-muted-foreground mb-2 block">Nombre</label>
+                <label className="text-xs text-muted-foreground mb-2 block">{tr.nombre}</label>
                 <input
                   type="text"
                   required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring"
-                  placeholder="Tu nombre"
+                  placeholder={tr.nombrePh}
                 />
               </div>
               <div>
-                <label className="text-xs text-muted-foreground mb-2 block">Email</label>
+                <label className="text-xs text-muted-foreground mb-2 block">{tr.email}</label>
                 <input
                   type="email"
                   required
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring"
-                  placeholder="tu@empresa.com"
+                  placeholder={tr.emailPh}
                 />
               </div>
               <div>
-                <label className="text-xs text-muted-foreground mb-2 block">Mensaje</label>
+                <label className="text-xs text-muted-foreground mb-2 block">{tr.mensaje}</label>
                 <textarea
                   required
                   rows={4}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring resize-none"
-                  placeholder="¿En qué podemos ayudarte?"
+                  placeholder={tr.mensajePh}
                 />
               </div>
               {status === "error" && (
@@ -294,7 +277,7 @@ export default function Contacto() {
                 disabled={status === "sending"}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring disabled:opacity-60"
               >
-                {status === "sending" ? "Enviando…" : "Enviar mensaje"}
+                {status === "sending" ? tr.enviando : tr.enviar}
                 {status === "sending" ? <Loader2 size={18} className="animate-spin" /> : <ArrowRight size={18} />}
               </button>
             </form>

@@ -10,6 +10,7 @@ import {
   ChevronRight,
   X,
 } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
 
 /* ---------- i18n ---------- */
 
@@ -203,11 +204,14 @@ const getFilePath = (file, lang) =>
 /* ---------- Component ---------- */
 
 export default function LegalHub() {
-  const [lang, setLang] = useState("es"); // ES por defecto (usuarios españoles)
+  // Sincronizamos el idioma inicial de los PDFs con el idioma global de la web,
+  // pero cada tarjeta mantiene después su propio toggle interno independiente.
+  const { lang: globalLang } = useI18n();
   const [openCategory, setOpenCategory] = useState(null);
   const [previewDoc, setPreviewDoc] = useState(null);
 
-  const t = I18N[lang];
+  const t = I18N[globalLang] || I18N.es;
+  const lang = globalLang;
 
   return (
     <section className="relative pt-40 pb-24 overflow-hidden min-h-screen">
