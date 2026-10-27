@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { CountUp, DrawSpark, GrowBar } from "./fx";
 
 /* ---------- Tema claro / oscuro ---------- */
 
@@ -102,18 +103,18 @@ export function NextReportingVisual({ lang = "es", compact = false }) {
         <div className={`grid gap-2.5 ${compact ? "grid-cols-2" : "grid-cols-2 sm:grid-cols-3"}`}>
           <div className="nx-pb">
             <div className="nx-lbl">{L.rev} · YTD</div>
-            <div className="nx-big mt-1.5">67,9 M €</div>
+            <div className="nx-big mt-1.5"><CountUp to={67.9} decimals={1} suffix=" M €" locale={lang === "en" ? "en-GB" : "es-ES"} /></div>
             <span className="nx-chip mt-2">+8,6 %</span>
           </div>
           <div className="nx-pb">
             <div className="nx-lbl">{L.ebitda} · YTD</div>
-            <div className="nx-big mt-1.5">12,7 M €</div>
+            <div className="nx-big mt-1.5"><CountUp to={12.7} decimals={1} suffix=" M €" locale={lang === "en" ? "en-GB" : "es-ES"} /></div>
             <span className="nx-chip mt-2">+13,0 %</span>
           </div>
           {!compact && (
             <div className="nx-pb col-span-2 sm:col-span-1">
               <div className="nx-lbl">{L.debt}</div>
-              <div className="nx-big mt-1.5">2,34×</div>
+              <div className="nx-big mt-1.5"><CountUp to={2.34} decimals={2} suffix="×" locale={lang === "en" ? "en-GB" : "es-ES"} /></div>
               <span className="nx-chip nx-chip-amber mt-2">−0,4</span>
             </div>
           )}
@@ -123,7 +124,7 @@ export function NextReportingVisual({ lang = "es", compact = false }) {
             <span className="text-[12.5px] font-semibold" style={{ color: "var(--nx-panel-fg)" }}>{L.chart}</span>
             <span className="nx-chip nx-chip-dim">dic · 6,89 M €</span>
           </div>
-          <Spark points={NR_REVENUE} height={compact ? 56 : 84} />
+          <DrawSpark points={NR_REVENUE} height={compact ? 56 : 84} />
         </div>
       </div>
     </div>
@@ -172,7 +173,7 @@ export function NextDataVisual({ lang = "es", compact = false }) {
                 {l.v} <span style={{ color: "var(--nx-panel-fg-3)" }}>{L.rows}</span>
               </span>
             </div>
-            <div className="nx-bar"><i style={{ width: `${l.w}%`, background: l.c }} /></div>
+            <GrowBar pct={l.w} color={l.c} />
             {l.note && !compact && (
               <span className="text-[12px]" style={{ color: "var(--nx-panel-fg-3)" }}>{l.note}</span>
             )}
@@ -222,18 +223,18 @@ export function NextManagementVisual({ lang = "es", compact = false }) {
         <div className="grid grid-cols-2 gap-2.5">
           <div className="nx-pb">
             <div className="nx-lbl">{L.won}</div>
-            <div className="nx-big mt-1.5">48.750 €</div>
+            <div className="nx-big mt-1.5"><CountUp to={48750} suffix=" €" /></div>
           </div>
           <div className="nx-pb">
             <div className="nx-lbl">{L.days}</div>
             <div className="nx-big mt-1.5">31 <span className="text-[14px]" style={{ color: "var(--nx-panel-fg-3)" }}>{L.sold}</span></div>
-            <div className="nx-bar mt-2"><i style={{ width: "68.9%" }} /></div>
+            <GrowBar pct={68.9} className="mt-2" />
           </div>
           {!compact && (
             <>
               <div className="nx-pb">
                 <div className="nx-lbl">{L.billed}</div>
-                <div className="nx-big mt-1.5">18.050 €</div>
+                <div className="nx-big mt-1.5"><CountUp to={18050} suffix=" €" /></div>
                 <div className="text-[12px] mt-1" style={{ color: "var(--nx-panel-fg-2)" }}>{L.billedSub}</div>
               </div>
               <div className="nx-pb">

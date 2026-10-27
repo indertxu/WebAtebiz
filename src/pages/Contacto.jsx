@@ -122,7 +122,15 @@ function buildClientHtml({ name, email, message, fecha }) {
 export default function Contacto() {
   const { t } = useI18n();
   const tr = t.contacto;
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState(() => {
+    let email = "";
+    try {
+      email = new URLSearchParams(window.location.search).get("email") || "";
+    } catch {
+      email = "";
+    }
+    return { name: "", email, message: "" };
+  });
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
   const [errorMsg, setErrorMsg] = useState("");
 

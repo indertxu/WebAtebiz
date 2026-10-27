@@ -70,6 +70,7 @@
     --nx-btn-shadow: 0 14px 30px -12px rgba(4, 120, 87, 0.55);
     --nx-title-2: linear-gradient(100deg, #047857 10%, #059669 55%, #10B981);
     --nx-panel: linear-gradient(180deg, #0D3328, #072219);
+    --nx-panel-solid: #0B2E24;
     --nx-panel-fg: #F0FDF7;
     --nx-panel-fg-2: #B4D1C6;
     --nx-panel-fg-3: #82A69A;
@@ -501,4 +502,73 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
+}
+
+/* ---------- Animación: piezas compartidas ---------- */
+@layer components {
+  .nx-caret {
+    display: inline-block;
+    width: 0.07em;
+    height: 0.82em;
+    margin-left: 0.06em;
+    vertical-align: -0.04em;
+    background: var(--nx-accent);
+    border-radius: 2px;
+    animation: nxBlink 1s steps(1) infinite;
+  }
+  @keyframes nxBlink { 50% { opacity: 0; } }
+
+  .nx-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .nx-marquee-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    animation: nxMarquee linear infinite;
+  }
+  .nx-marquee:hover .nx-marquee-track { animation-play-state: paused; }
+  .nx-marquee-rev .nx-marquee-track { animation-direction: reverse; }
+  @keyframes nxMarquee { to { transform: translateX(calc(-50% - 6px)); } }
+
+  .nx-spot { position: relative; isolation: isolate; }
+  .nx-spot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(16, 185, 129, 0.14), transparent 45%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .nx-spot:hover::before { opacity: 1; }
+
+  .nx-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(closest-side, #000, transparent);
+    mask-image: radial-gradient(closest-side, #000, transparent);
+  }
+
+  @keyframes nxFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .nx-float { animation: nxFloat 6s ease-in-out infinite; }
+
+  @keyframes nxSpin { to { transform: rotate(360deg); } }
+  .nx-spin-slow { animation: nxSpin 60s linear infinite; transform-origin: center; transform-box: fill-box; }
+
+  @keyframes nxScrollCue {
+    0% { transform: scaleY(0); transform-origin: top; }
+    45% { transform: scaleY(1); transform-origin: top; }
+    55% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+  .nx-scroll-cue { animation: nxScrollCue 2.2s var(--nx-ease) infinite; }
 }

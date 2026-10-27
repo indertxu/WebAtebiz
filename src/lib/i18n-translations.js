@@ -7,6 +7,7 @@
  * Next Management.
  */
 import { TRANSLATIONS as LEGACY } from "./i18n-legacy";
+import { HOME } from "./i18n-home";
 
 export const PRODUCT_LINKS = {
   "next-reporting": { web: "https://nextreporting.atebiz.com/", app: "https://nextreport.atebiz.com/" },
@@ -57,6 +58,7 @@ const esProducts = [
 
 const es = {
   ...LEGACY.es,
+  home: HOME.es,
   navbar: {
     ...LEGACY.es.navbar,
     tema: "Cambiar tema",
@@ -281,6 +283,7 @@ const enProducts = [
 
 const en = {
   ...LEGACY.en,
+  home: HOME.en,
   navbar: {
     ...LEGACY.en.navbar,
     tema: "Toggle theme",
