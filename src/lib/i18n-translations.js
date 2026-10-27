@@ -11,7 +11,7 @@ import { HOME } from "./i18n-home";
 
 export const PRODUCT_LINKS = {
   "next-reporting": { web: "https://nextreporting.atebiz.com/", app: "https://nextreport.atebiz.com/" },
-  "next-data": { web: "https://nextdata.atebiz.com/" },
+  "next-data": { web: "https://nextdata.atebiz.com/", app: "https://nextdwh.atebiz.com/next" },
   "next-management": { web: null },
 };
 

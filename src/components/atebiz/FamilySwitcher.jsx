@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion, useInView, useReducedMotion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { PRODUCT_LINKS } from "@/lib/i18n-translations";
 import { PRODUCT_VISUALS } from "./ui";
 import { ProductCta } from "./Ecosystem";
 import Cube, { PRODUCT_TO_FACE } from "./Cube";
@@ -127,6 +129,12 @@ export default function FamilySwitcher() {
                   </StaggerItem>
                   <StaggerItem className="mt-7 flex flex-wrap items-center gap-3">
                     <ProductCta product={p} />
+                    {PRODUCT_LINKS[p.key]?.app && (
+                      <a href={PRODUCT_LINKS[p.key].app} target="_blank" rel="noopener noreferrer" className="nx-btn nx-btn-ghost nx-btn-sm nx-focus">
+                        {f.app}
+                        <ArrowUpRight size={15} />
+                      </a>
+                    )}
                     <Link to={`/productos#${p.key}`} className="nx-link nx-focus text-[14px]">
                       {f.detail} →
                     </Link>

@@ -73,6 +73,7 @@ export const HOME = {
       desc: "Cada producto resuelve una parte crítica del ciclo. Todos comparten diseño, seguridad y equipo. Elige uno o combínalos.",
       auto: "Cambia solo · pasa el ratón para pararlo",
       detail: "Ver ficha completa",
+      app: "Entrar",
     },
     connectors: {
       tag: "Conectores",
@@ -167,6 +168,7 @@ export const HOME = {
       desc: "Each product solves a critical part of the cycle. All share design, security and team. Pick one or combine them.",
       auto: "Rotates on its own · hover to pause",
       detail: "See full product",
+      app: "Sign in",
     },
     connectors: {
       tag: "Connectors",
