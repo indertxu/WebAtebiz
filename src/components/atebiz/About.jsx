@@ -1,172 +1,145 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Shield, Zap, LineChart, Lock, MapPin, Building2, Globe, Users,
-  BarChart3, Database, Briefcase, ArrowRight, Info,
-} from "lucide-react";
+import { ArrowRight, Building2, Globe, LineChart, Lock, MapPin, Shield, Users, Zap } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import NextReportingFullscreen from "./NextReportingFullscreen";
-import ComingSoonModal from "./ComingSoonModal";
+import { Eyebrow, SectionHead } from "./ui";
+import { ProductCta } from "./Ecosystem";
 
 const HIGHLIGHT_ICONS = [MapPin, Building2, Globe, Users];
 const VALUE_ICONS = [Zap, LineChart, Shield, Lock];
-const PRODUCT_ICONS = [BarChart3, Database, Briefcase];
-const PRODUCT_KEYS = ["next-reporting", "dataworkhouse", "next-management"];
+
+function PlacesPanel() {
+  const { t, lang } = useI18n();
+  const hl = t.about.highlights;
+  const places = [
+    { city: "Valencia", code: "VLC", note: hl[0].title },
+    { city: "Madrid", code: "MAD", note: hl[1].title },
+    { city: lang === "en" ? "Denmark" : "Dinamarca", code: "DK", note: hl[2].title },
+  ];
+  return (
+    <div className="nx-panel">
+      <div className="nx-panel-bar">
+        Atebiz
+        <span className="nx-panel-tag">{hl[3].title}</span>
+      </div>
+      <ol className="p-5 grid gap-0">
+        {places.map((p, i) => (
+          <li key={p.code} className="grid grid-cols-[52px_minmax(0,1fr)] gap-4">
+            <div className="flex flex-col items-center">
+              <span className="w-[52px] h-[52px] rounded-[14px] grid place-items-center font-mono text-[13px] font-medium" style={{ background: "rgba(16,185,129,.16)", color: "#6EE7B7", border: "1px solid rgba(52,211,153,.3)" }}>
+                {p.code}
+              </span>
+              {i < places.length - 1 && <span className="w-px flex-1 min-h-[22px]" style={{ background: "rgba(52,211,153,.35)" }} />}
+            </div>
+            <div className="pb-6 pt-1.5 min-w-0">
+              <div className="font-bold text-[17px] tracking-tight" style={{ color: "var(--nx-panel-fg)" }}>{p.city}</div>
+              <div className="text-[13.5px] mt-0.5" style={{ color: "var(--nx-panel-fg-2)" }}>{p.note}</div>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
 
 export default function About() {
   const { t } = useI18n();
-  const [nrOpen, setNrOpen] = useState(false);
-  const [comingSoonProduct, setComingSoonProduct] = useState(null);
-
-  const openProduct = (i) => {
-    const key = PRODUCT_KEYS[i];
-    if (key === "next-reporting") {
-      setNrOpen(true);
-    } else {
-      const meta = t.about.productLine[i];
-      setComingSoonProduct({
-        ...meta,
-        icon: PRODUCT_ICONS[i],
-        features: buildFeaturesFor(key, t),
-      });
-    }
-  };
+  const a = t.about;
+  const products = t.ecosystem.products;
 
   return (
-    <section id="empresa" className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
-      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <div className="text-xs font-medium text-primary/80 tracking-wide uppercase mb-4">
-            {t.about.tag}
+    <>
+      <section className="pt-6 sm:pt-12 pb-14">
+        <div className="nx-wrap grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-12 lg:gap-16 items-start">
+          <div className="min-w-0">
+            <Eyebrow tag={a.tag} />
+            <h1 className="nx-h1 mt-5 !text-[clamp(38px,5.4vw,68px)]">
+              {a.title1} <span className="nx-grad">{a.titleHighlight}</span> {a.title2}
+            </h1>
+            <div className="mt-7 grid gap-4 max-w-[64ch]">
+              <p className="nx-lead">{a.p1}</p>
+              <p className="nx-body text-[16.5px]">{a.p2}</p>
+              <p className="nx-body text-[16.5px]">{a.p3}</p>
+            </div>
           </div>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-6">
-            {t.about.title1} <span className="text-primary">{t.about.titleHighlight}</span> {t.about.title2}
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-4">{t.about.p1}</p>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-4">{t.about.p2}</p>
-          <p className="text-muted-foreground text-lg leading-relaxed">{t.about.p3}</p>
-
-          <div className="mt-8 grid sm:grid-cols-2 gap-4">
-            {t.about.highlights.map((h, i) => {
-              const Icon = HIGHLIGHT_ICONS[i];
-              return (
-                <div key={h.title} className="flex gap-4 items-start">
-                  <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Icon size={18} className="text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-sm mb-1">{h.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{h.desc}</p>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="min-w-0 w-full max-w-[520px] mx-auto lg:mt-10">
+            <PlacesPanel />
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-5">
-          {t.about.values.map((v, i) => {
-            const Icon = VALUE_ICONS[i];
+        <div className="nx-wrap mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {a.highlights.map((h, i) => {
+            const Icon = HIGHLIGHT_ICONS[i];
             return (
-              <div key={v.title} className="glass-panel glass-panel-hover rounded-2xl p-6 group">
-                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Icon size={20} className="text-primary" />
+              <div key={h.title} className="nx-soft p-5 flex gap-4 items-start">
+                <div className="nx-icon"><Icon size={18} /></div>
+                <div className="min-w-0">
+                  <h2 className="font-bold text-[15.5px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{h.title}</h2>
+                  <p className="nx-body text-[14px] mt-1">{h.desc}</p>
                 </div>
-                <h3 className="font-heading font-semibold text-lg mb-2">{v.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{v.desc}</p>
               </div>
             );
           })}
         </div>
-      </div>
+      </section>
 
-      {/* Qué ofrecemos — TARJETAS CLICABLES */}
-      <div className="relative max-w-7xl mx-auto px-6 mt-24 lg:mt-32">
-        <div className="max-w-3xl mb-12">
-          <div className="text-xs font-medium text-primary/80 tracking-wide uppercase mb-4">
-            {t.about.ofrecemosTag}
-          </div>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-4">
-            {t.about.ofrecemosTitle1} <span className="text-primary">{t.about.ofrecemosHighlight}</span>{t.about.ofrecemosTitle2}
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">{t.about.ofrecemosDesc}</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-5">
-          {t.about.productLine.map((p, i) => {
-            const Icon = PRODUCT_ICONS[i];
-            const isAvailable = i === 0; // solo Next Reporting está disponible
+      <section className="py-14 lg:py-20">
+        <div className="nx-wrap grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+          {a.values.map((v, i) => {
+            const Icon = VALUE_ICONS[i];
             return (
-              <button
-                key={p.name}
-                onClick={() => openProduct(i)}
-                className="glass-panel rounded-2xl p-7 flex gap-5 hover:border-primary/40 transition-all duration-500 hover:-translate-y-0.5 text-left group focus-ring"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                  <Icon size={22} className="text-primary" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-2 flex-wrap">
-                    <h3 className="font-heading font-semibold text-lg tracking-tight">{p.name}</h3>
-                    <span className={`mono text-[10px] px-2.5 py-0.5 rounded-full ${
-                      isAvailable
-                        ? "bg-primary/15 text-primary border border-primary/30"
-                        : "bg-secondary text-muted-foreground border border-border"
-                    }`}>
-                      {p.status.toUpperCase()}
-                    </span>
-                    {!isAvailable && <Lock size={11} className="text-muted-foreground" />}
-                    {isAvailable && <Info size={12} className="text-primary/70" />}
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
-                  <div className="mt-3 inline-flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>{isAvailable ? "→" : "🔒"}</span>
-                    <span>{isAvailable ? "Ver ficha" : "Ver detalles"}</span>
-                  </div>
-                </div>
-              </button>
+              <div key={v.title} className="nx-card p-6">
+                <div className="nx-icon"><Icon size={19} /></div>
+                <h2 className="font-black text-[24px] tracking-[-0.03em] mt-5" style={{ color: "var(--nx-fg)" }}>{v.title}</h2>
+                <p className="nx-body text-[15px] mt-1.5">{v.desc}</p>
+              </div>
             );
           })}
         </div>
+      </section>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          <Link
-            to="/productos"
-            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring"
-          >
-            {t.about.verTodos}
-            <ArrowRight size={17} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-          <Link
-            to="/contacto"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-foreground hover:border-primary hover:bg-primary/5 transition-all focus-ring"
-          >
-            {t.about.hablarEquipo}
-          </Link>
+      <section className="py-14 lg:py-20">
+        <div className="nx-wrap">
+          <SectionHead
+            tag={a.ofrecemosTag}
+            title={
+              <>
+                {a.ofrecemosTitle1} <span className="nx-grad">{a.ofrecemosHighlight}</span>
+                {a.ofrecemosTitle2}
+              </>
+            }
+            desc={a.ofrecemosDesc}
+          />
+          <div className="mt-10 grid md:grid-cols-3 gap-4">
+            {products.map((p) => (
+              <article key={p.key} className="nx-card p-6 flex flex-col">
+                <div className="flex items-center gap-3">
+                  <img src="/logo.png" alt="" width="34" height="34" />
+                  <div className="min-w-0">
+                    <h3 className="font-bold text-[18px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{p.name}</h3>
+                    <span className="font-mono text-[11.5px] uppercase tracking-[0.06em] nx-muted">{p.status}</span>
+                  </div>
+                </div>
+                <p className="nx-body text-[15px] mt-4 flex-1">{p.desc}</p>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <ProductCta product={p} />
+                  <Link to={`/productos#${p.key}`} className="nx-link nx-focus text-[14px]">{a.verFicha} →</Link>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link to="/productos" className="nx-btn nx-btn-primary nx-focus">
+              {a.verTodos}
+              <ArrowRight size={17} />
+            </Link>
+            <Link to="/contacto" className="nx-btn nx-btn-ghost nx-focus">
+              {a.hablarEquipo}
+            </Link>
+          </div>
         </div>
-      </div>
-
-      {/* Popups */}
-      <NextReportingFullscreen open={nrOpen} onClose={() => setNrOpen(false)} />
-      <ComingSoonModal
-        open={!!comingSoonProduct}
-        product={comingSoonProduct}
-        onClose={() => setComingSoonProduct(null)}
-      />
-    </section>
+      </section>
+    </>
   );
-}
-
-/* ---------- Helpers ---------- */
-
-// Features específicas por producto (mismas que en Productos)
-function buildFeaturesFor(key, t) {
-  const map = {
-    dataworkhouse: 1,
-    "next-management": 2,
-  };
-  const idx = map[key];
-  if (idx == null) return [];
-  return t.products.products[idx]?.features || [];
 }

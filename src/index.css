@@ -2,400 +2,503 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Sistema visual Atebiz — alineado con Next Reporting y Next Data.
+  Fondo claro con rejilla, titulares Inter 900, etiquetas JetBrains Mono,
+  verdes esmeralda y paneles oscuros de producto. Tema oscuro con la clase .dark.
+*/
 @layer base {
   :root {
-    --background: 158 78% 3%;
-    --foreground: 165 30% 94%;
-    --card: 158 40% 6%;
-    --card-foreground: 165 30% 94%;
-    --popover: 158 40% 6%;
-    --popover-foreground: 165 30% 94%;
-    --primary: 153 100% 50%;
-    --primary-foreground: 158 78% 3%;
-    --secondary: 156 25% 14%;
-    --secondary-foreground: 165 30% 94%;
-    --muted: 156 25% 14%;
-    --muted-foreground: 158 15% 65%;
-    --accent: 153 100% 50%;
-    --accent-foreground: 158 78% 3%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 156 25% 14%;
-    --input: 156 25% 16%;
-    --ring: 153 100% 50%;
-    --chart-1: 153 100% 50%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-    --font-heading: "Geist", ui-sans-serif, system-ui, sans-serif;
-    --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-    --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
-    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Tokens shadcn (HSL) — los usan los componentes de UI y el Legal Hub */
+    --background: 150 26% 96%;
+    --foreground: 164 75% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 164 75% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 164 75% 9%;
+    --primary: 163 94% 24%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 147 25% 93%;
+    --secondary-foreground: 164 75% 9%;
+    --muted: 147 25% 93%;
+    --muted-foreground: 162 11% 40%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 155 18% 87%;
+    --input: 155 18% 84%;
+    --ring: 163 94% 24%;
+    --chart-1: 163 94% 24%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 156 72% 67%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 0 72% 51%;
+    --radius: 0.75rem;
+    --font-heading: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 164 75% 9%;
+    --sidebar-primary: 163 94% 24%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 147 25% 93%;
+    --sidebar-accent-foreground: 164 75% 9%;
+    --sidebar-border: 155 18% 87%;
+    --sidebar-ring: 163 94% 24%;
+
+    /* Tokens de marca (los mismos que nextdata.atebiz.com) */
+    --nx-bg: #F4F8F6;
+    --nx-card: #FFFFFF;
+    --nx-sunk: #E8F1EC;
+    --nx-fg: #062A21;
+    --nx-fg-2: #2F4B44;
+    --nx-fg-3: #5A716A;
+    --nx-accent: #059669;
+    --nx-accent-strong: #047857;
+    --nx-line: rgba(6, 78, 59, 0.13);
+    --nx-line-2: rgba(6, 78, 59, 0.22);
+    --nx-grid: rgba(6, 78, 59, 0.055);
+    --nx-nav: rgba(244, 248, 246, 0.78);
+    --nx-ghost: rgba(255, 255, 255, 0.72);
+    --nx-pill-bg: rgba(16, 185, 129, 0.14);
+    --nx-pill-fg: #047857;
+    --nx-warn: #B45309;
+    --nx-warn-bg: rgba(245, 158, 11, 0.16);
+    --nx-btn: linear-gradient(135deg, #065F46, #047857 55%, #059669);
+    --nx-btn-shadow: 0 14px 30px -12px rgba(4, 120, 87, 0.55);
+    --nx-title-2: linear-gradient(100deg, #047857 10%, #059669 55%, #10B981);
+    --nx-panel: linear-gradient(180deg, #0D3328, #072219);
+    --nx-panel-fg: #F0FDF7;
+    --nx-panel-fg-2: #B4D1C6;
+    --nx-panel-fg-3: #82A69A;
+    --nx-panel-line: rgba(167, 243, 208, 0.16);
+    --nx-panel-block: rgba(255, 255, 255, 0.035);
+    --nx-panel-block-line: rgba(255, 255, 255, 0.08);
+    --nx-shadow-card: 0 12px 30px -20px rgba(6, 42, 33, 0.25);
+    --nx-shadow-focus: 0 40px 70px -30px rgba(6, 42, 33, 0.55);
+    --nx-ease: cubic-bezier(0.16, 1, 0.3, 1);
+    color-scheme: light;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 155 63% 5%;
+    --foreground: 150 50% 93%;
+    --card: 158 55% 9%;
+    --card-foreground: 150 50% 93%;
+    --popover: 158 55% 9%;
+    --popover-foreground: 150 50% 93%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 160 80% 8%;
+    --secondary: 157 53% 11%;
+    --secondary-foreground: 150 50% 93%;
+    --muted: 157 53% 11%;
+    --muted-foreground: 160 15% 60%;
+    --accent: 158 64% 52%;
+    --accent-foreground: 160 80% 8%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 157 38% 16%;
+    --input: 157 38% 18%;
+    --ring: 158 64% 52%;
+    --sidebar-background: 158 55% 9%;
+    --sidebar-foreground: 150 50% 93%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 160 80% 8%;
+    --sidebar-accent: 157 53% 11%;
+    --sidebar-accent-foreground: 150 50% 93%;
+    --sidebar-border: 157 38% 16%;
+    --sidebar-ring: 158 64% 52%;
+
+    --nx-bg: #05160F;
+    --nx-card: #0A2219;
+    --nx-sunk: #0D2A1F;
+    --nx-fg: #E6F6EE;
+    --nx-fg-2: #B4D1C6;
+    --nx-fg-3: #82A69A;
+    --nx-accent: #34D399;
+    --nx-accent-strong: #6EE7B7;
+    --nx-line: rgba(167, 243, 208, 0.12);
+    --nx-line-2: rgba(167, 243, 208, 0.22);
+    --nx-grid: rgba(167, 243, 208, 0.045);
+    --nx-nav: rgba(5, 22, 15, 0.8);
+    --nx-ghost: rgba(255, 255, 255, 0.04);
+    --nx-pill-bg: rgba(52, 211, 153, 0.14);
+    --nx-pill-fg: #6EE7B7;
+    --nx-warn: #FBBF24;
+    --nx-btn: linear-gradient(135deg, #047857, #059669 55%, #10B981);
+    --nx-btn-shadow: 0 14px 30px -12px rgba(16, 185, 129, 0.45);
+    --nx-title-2: linear-gradient(100deg, #34D399 10%, #6EE7B7 55%, #A3E635);
+    --nx-panel: linear-gradient(180deg, #0F3A2D, #0A2A20);
+    --nx-panel-line: rgba(167, 243, 208, 0.2);
+    --nx-shadow-card: 0 12px 30px -20px rgba(0, 0, 0, 0.6);
+    --nx-shadow-focus: 0 40px 70px -30px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
   }
 }
-
-
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
-  body {
-    @apply bg-background text-foreground font-body;
-    /* Cursor personalizado con el logo del cubo Atebiz.
-       Hotspot en (10, 10) → el click "activo" cae hacia la esquina superior-izquierda
-       del logo, imitando la posición de la flecha estándar del sistema. */
-    cursor: url('/logo-cursor.png') 10 10, default;
-  }
-
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 96px;
   }
 
-  /* Elementos interactivos → cursor más pequeño (24px) para dar sensación de "hover activo" */
-  a,
-  button,
-  [role="button"],
-  input[type="submit"],
-  input[type="button"],
-  label[for],
-  select,
-  summary,
-  .cursor-pointer {
-    cursor: url('/logo-cursor-sm.png') 8 8, pointer;
+  body {
+    @apply font-body;
+    background-color: var(--nx-bg);
+    color: var(--nx-fg);
+    background-image:
+      linear-gradient(var(--nx-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--nx-grid) 1px, transparent 1px);
+    background-size: 48px 48px;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* Campos de texto → mantener el cursor de texto estándar (I-beam) */
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="number"],
-  textarea {
-    cursor: text;
+  h1, h2, h3, h4 {
+    text-wrap: balance;
   }
 
-  /* Utilidad para ocultar el cursor (usada en la imagen reactiva de Products) */
-  .cursor-none {
-    cursor: none !important;
+  ::selection {
+    background: rgba(16, 185, 129, 0.25);
   }
 }
 
 @layer components {
-  .glass-panel {
-    background: rgba(26, 43, 38, 0.35);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(0, 255, 133, 0.12);
+  /* Contenedor con gutter seguro */
+  .nx-wrap {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  @media (min-width: 640px) {
+    .nx-wrap {
+      padding-left: max(32px, env(safe-area-inset-left, 0px));
+      padding-right: max(32px, env(safe-area-inset-right, 0px));
+    }
   }
 
-  .glass-panel-hover {
-    transition: backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  /* Titulares */
+  .nx-h1 {
+    font-weight: 900;
+    font-size: clamp(40px, 6.6vw, 82px);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    color: var(--nx-fg);
   }
-  .glass-panel-hover:hover {
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-    border-color: rgba(0, 255, 133, 0.4);
+  .nx-h2 {
+    font-weight: 900;
+    font-size: clamp(32px, 4.6vw, 56px);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    color: var(--nx-fg);
   }
+  .nx-h3 {
+    font-weight: 800;
+    font-size: clamp(22px, 2.4vw, 28px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--nx-fg);
+  }
+  .nx-grad {
+    background: var(--nx-title-2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .nx-lead {
+    font-size: clamp(17px, 1.6vw, 19px);
+    line-height: 1.6;
+    color: var(--nx-fg-2);
+    max-width: 62ch;
+  }
+  .nx-lead b, .nx-lead strong { color: var(--nx-fg); font-weight: 700; }
+  .nx-body { color: var(--nx-fg-2); line-height: 1.6; }
+  .nx-muted { color: var(--nx-fg-3); }
 
-  .velocity-line {
-    background: linear-gradient(90deg, transparent, #00FF85, transparent);
-  }
-
-  .glow-emerald {
-    box-shadow: 0 0 40px rgba(0, 255, 133, 0.25);
-  }
-
-  .text-glow {
-    text-shadow: 0 0 30px rgba(0, 255, 133, 0.4);
-  }
-
-  .mono {
+  /* Etiquetas */
+  .nx-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-mono);
-    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--nx-fg-3);
+  }
+  .nx-eyebrow b {
+    font-weight: 500;
+    color: var(--nx-pill-fg);
+    background: var(--nx-pill-bg);
+    padding: 5px 8px;
+    border-radius: 7px;
+  }
+  .nx-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--nx-line);
+    background: var(--nx-ghost);
+    color: var(--nx-fg-2);
+    white-space: nowrap;
+  }
+  .nx-pill-on {
+    background: var(--nx-pill-bg);
+    border-color: transparent;
+    color: var(--nx-pill-fg);
+  }
+  .nx-pill-warn {
+    background: var(--nx-warn-bg);
+    border-color: transparent;
+    color: var(--nx-warn);
   }
 
-  .focus-ring:focus-visible {
-    outline: 2px solid #00FF85;
-    outline-offset: 4px;
+  /* Botones */
+  .nx-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    padding: 14px 20px;
+    border-radius: 11px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: transform 0.2s var(--nx-ease), background-color 0.2s, border-color 0.2s;
+  }
+  .nx-btn-primary {
+    background: var(--nx-btn);
+    color: #fff;
+    box-shadow: var(--nx-btn-shadow);
+  }
+  .nx-btn-primary:hover { transform: translateY(-1px); }
+  .nx-btn-ghost {
+    background: var(--nx-ghost);
+    color: var(--nx-fg);
+    border-color: var(--nx-line-2);
+  }
+  .nx-btn-ghost:hover { background: var(--nx-sunk); }
+  .nx-btn-sm { padding: 10px 14px; font-size: 14px; }
+  .nx-link {
+    font-weight: 600;
+    color: var(--nx-fg);
+    border-bottom: 1px solid var(--nx-line-2);
+    padding-bottom: 2px;
+    transition: border-color 0.2s;
+  }
+  .nx-link:hover { border-color: var(--nx-accent); }
+
+  /* Superficies */
+  .nx-card {
+    background: var(--nx-card);
+    border: 1px solid var(--nx-line);
+    border-radius: 16px;
+    box-shadow: var(--nx-shadow-card);
+  }
+  .nx-soft {
+    background: var(--nx-ghost);
+    border: 1px solid var(--nx-line);
+    border-radius: 16px;
+  }
+  .nx-panel {
+    background: var(--nx-panel);
+    color: var(--nx-panel-fg);
+    border: 1px solid var(--nx-panel-line);
+    border-radius: 26px;
+    box-shadow: var(--nx-shadow-focus);
+    overflow: hidden;
+  }
+  .nx-panel-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--nx-panel-block-line);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--nx-panel-fg);
+  }
+  .nx-panel-tag {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--nx-panel-fg-2);
+    border: 1px solid var(--nx-panel-block-line);
+    padding: 5px 8px;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+  .nx-pb {
+    background: var(--nx-panel-block);
+    border: 1px solid var(--nx-panel-block-line);
+    border-radius: 14px;
+    padding: 14px;
+  }
+  .nx-lbl {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--nx-panel-fg-3);
+  }
+  .nx-big {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--nx-panel-fg);
+    font-variant-numeric: tabular-nums;
+  }
+  .nx-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 5px 8px;
+    border-radius: 7px;
+    background: rgba(16, 185, 129, 0.18);
+    color: #6EE7B7;
+    white-space: nowrap;
+  }
+  .nx-chip-dim { background: rgba(255, 255, 255, 0.06); color: var(--nx-panel-fg-2); }
+  .nx-chip-amber { background: rgba(245, 158, 11, 0.18); color: #FCD34D; }
+  .nx-live::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #34D399;
+    margin-right: 6px;
+    vertical-align: 1px;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.18);
+  }
+  .nx-bar {
+    height: 8px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+  }
+  .nx-bar > i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #10B981, #6EE7B7);
+  }
+  .nx-num { font-variant-numeric: tabular-nums; }
+  .nx-icon {
+    width: 40px;
+    height: 40px;
+    flex: none;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: var(--nx-pill-bg);
+    color: var(--nx-pill-fg);
+  }
+  .nx-check {
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 10px;
+    color: var(--nx-fg-2);
+  }
+  .nx-check::before {
+    content: "✓";
+    color: var(--nx-pill-fg);
+    font-weight: 800;
+  }
+  .nx-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px 15px;
+    border-radius: 11px;
+    border: 1px solid var(--nx-line-2);
+    background: var(--nx-card);
+    color: var(--nx-fg);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .nx-input::placeholder { color: var(--nx-fg-3); }
+  .nx-input:focus { border-color: var(--nx-accent); box-shadow: 0 0 0 3px var(--nx-pill-bg); }
+
+  /* Compatibilidad con clases antiguas (Legal Hub, modales) */
+  .glass-panel {
+    background: var(--nx-card);
+    border: 1px solid var(--nx-line);
+    box-shadow: var(--nx-shadow-card);
+  }
+  .glass-panel-hover { transition: border-color 0.3s, transform 0.3s; }
+  .glass-panel-hover:hover { border-color: var(--nx-line-2); }
+  .velocity-line { background: linear-gradient(90deg, transparent, var(--nx-accent), transparent); }
+  .glow-emerald { box-shadow: var(--nx-btn-shadow); }
+  .text-glow { text-shadow: none; }
+  .mono { font-family: var(--font-mono); letter-spacing: 0.03em; }
+  .focus-ring:focus-visible,
+  .nx-focus:focus-visible {
+    outline: 2px solid var(--nx-accent);
+    outline-offset: 3px;
   }
 }
 
 @layer utilities {
-  .animate-fade-up {
-    animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  .animate-fade-up { animation: nxFadeUp 0.6s var(--nx-ease) both; }
+  .animate-fade-in { animation: nxFadeIn 0.6s ease both; }
+  @keyframes nxFadeUp {
+    from { opacity: 0.001; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
   }
-  .animate-fade-in {
-    animation: fadeIn 1s ease both;
-  }
-  .animate-pulse-glow {
-    animation: pulseGlow 3s ease-in-out infinite;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
+  @keyframes nxFadeIn {
+    from { opacity: 0.001; }
     to { opacity: 1; }
   }
-  @keyframes pulseGlow {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-  }
-
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-  /* --- Cinematic 5s dive through the tunnel — punch-through feel --- */
-
-  /*
-    Timeline reference (percentages of 5s = 250ms per 5%):
-      0–40%   (0–2.0s)   Gentle acceleration — you feel the tunnel move
-      40–70%  (2.0–3.5s) Rapid acceleration — hyperspace, streaks explode
-      70–80%  (3.5–4.0s) PUNCH THROUGH — brief blur peak → light collapses to white
-      80–86%  (4.0–4.3s) Bright flash blowing out the whole screen
-      86–100% (4.3–5.0s) Fade holds pure black until dive unmounts
-  */
-
-  /* Base tunnel image: slow start → hyperspace → clean punch-through (blur DROPS at peak) */
-  @keyframes diveZoom {
-    0%   { transform: scale(1);    filter: blur(0px) brightness(1);   }
-    25%  { transform: scale(1.8);  filter: blur(1px) brightness(1.1); }
-    50%  { transform: scale(4);    filter: blur(3px) brightness(1.3); }
-    65%  { transform: scale(9);    filter: blur(6px) brightness(1.6); }
-    72%  { transform: scale(16);   filter: blur(8px) brightness(2.2); }
-    78%  { transform: scale(28);   filter: blur(4px) brightness(3.5); opacity: 1; }
-    82%  { transform: scale(40);   filter: blur(0px) brightness(5);   opacity: 0.6; }
-    86%  { opacity: 0; }
-    100% { opacity: 0; }
+  @keyframes nxFlow {
+    from { stroke-dashoffset: 24; }
+    to { stroke-dashoffset: 0; }
   }
+  .nx-flow { stroke-dasharray: 4 8; animation: nxFlow 1.2s linear infinite; }
 
-  /* Central end-of-tunnel light: distant → rushes toward camera → fills the screen */
-  @keyframes diveGlow {
-    0%   { transform: translate(-50%, -50%) scale(0.2); opacity: 0;   filter: blur(40px); }
-    30%  { transform: translate(-50%, -50%) scale(0.5); opacity: 0.5; filter: blur(35px); }
-    55%  { transform: translate(-50%, -50%) scale(1.2); opacity: 0.9; filter: blur(28px); }
-    70%  { transform: translate(-50%, -50%) scale(3);   opacity: 1;   filter: blur(20px); }
-    78%  { transform: translate(-50%, -50%) scale(8);   opacity: 1;   filter: blur(12px); }
-    84%  { transform: translate(-50%, -50%) scale(18);  opacity: 0;   filter: blur(4px);  }
-    100% { opacity: 0; }
-  }
-
-  /* Warp speed streaks — accelerate outward, EXPLODE at punch-through, then vanish */
-  @keyframes diveStreaks {
-    0%   { transform: translate(-50%, -50%) scale(0.05) rotate(0deg);   opacity: 0;   }
-    20%  { transform: translate(-50%, -50%) scale(0.4)  rotate(30deg);  opacity: 0.4; }
-    50%  { transform: translate(-50%, -50%) scale(1.5)  rotate(120deg); opacity: 0.75; }
-    70%  { transform: translate(-50%, -50%) scale(4)    rotate(240deg); opacity: 1;   }
-    78%  { transform: translate(-50%, -50%) scale(9)    rotate(320deg); opacity: 1;   }
-    84%  { transform: translate(-50%, -50%) scale(16)   rotate(400deg); opacity: 0;   }
-    100% { transform: translate(-50%, -50%) scale(20)   rotate(500deg); opacity: 0;   }
-  }
-
-  /* Radial vignette that deepens with acceleration, then opens up at punch-through */
-  @keyframes diveVignette {
-    0%   { opacity: 0.35; }
-    50%  { opacity: 0.65; }
-    70%  { opacity: 0.7;  }
-    78%  { opacity: 0.2;  }
-    82%  { opacity: 0;    }
-    100% { opacity: 0;    }
-  }
-
-  /* Bright green→white flash at the moment you punch through into open space */
-  @keyframes diveFlash {
-    0%,  72%  { opacity: 0; }
-    77%       { opacity: 0.6; }
-    80%       { opacity: 1;   }
-    84%       { opacity: 1;   }
-    92%       { opacity: 0;   }
-    100%      { opacity: 0;   }
-  }
-
-  /* Final fade to pure black — takes over as the flash dies, holds until unmount */
-  @keyframes diveFade {
-    0%,  80% { opacity: 0; }
-    88%      { opacity: 0.85; }
-    93%      { opacity: 1;    }
-    100%     { opacity: 1;    }
-  }
-
-  /* Chromatic edge — depth cue on the tunnel walls, dies before flash */
-  @keyframes diveChroma {
-    0%   { opacity: 0;   }
-    40%  { opacity: 0.5; }
-    65%  { opacity: 0.85;}
-    75%  { opacity: 0.6; }
-    80%  { opacity: 0;   }
-    100% { opacity: 0;   }
-  }
+  /* Usadas por los modales antiguos */
   @keyframes modalEnter {
     0% { opacity: 0; transform: translateY(18px) scale(0.965); }
-    100% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 1; transform: none; }
   }
   @keyframes contentRise {
     0% { opacity: 0; transform: translateY(14px); }
-    100% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: none; }
   }
+  .animate-modal-enter { animation: modalEnter 0.6s var(--nx-ease) both; }
+  .animate-content-rise { animation: contentRise 0.5s var(--nx-ease) both; }
+}
 
-  /* cubic-bezier(0.7, 0, 0.9, 0.2) = strong ease-in that snaps hard at the end
-     — the tunnel accelerates gently, then rockets forward at punch-through */
-  .animate-dive-zoom     { animation: diveZoom     5s cubic-bezier(0.7, 0, 0.9, 0.2) forwards; }
-  .animate-dive-glow     { animation: diveGlow     5s cubic-bezier(0.65, 0, 0.85, 0.3) forwards; }
-  .animate-dive-streaks  { animation: diveStreaks  5s cubic-bezier(0.75, 0, 0.9, 0.25) forwards; }
-  .animate-dive-vignette { animation: diveVignette 5s cubic-bezier(0.5, 0, 0.75, 0)   forwards; }
-  .animate-dive-flash    { animation: diveFlash    5s cubic-bezier(0.4, 0, 0.2, 1)    forwards; }
-  .animate-dive-fade     { animation: diveFade     5s cubic-bezier(0.4, 0, 1, 0.5)    forwards; }
-  .animate-dive-chroma   { animation: diveChroma   5s cubic-bezier(0.7, 0, 0.9, 0.2)  forwards; }
-  .animate-modal-enter { animation: modalEnter 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .animate-content-rise { animation: contentRise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
-
-  /* ------- Igloo-inspired FX ------- */
-
-  /* Cursor-follow radial glow (uses --mx / --my CSS vars set in JS) */
-  .cursor-glow {
-    position: relative;
-    isolation: isolate;
-  }
-  .cursor-glow::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: radial-gradient(
-      600px circle at var(--mx, 50%) var(--my, 50%),
-      rgba(0, 255, 133, 0.18),
-      transparent 40%
-    );
-    opacity: 0;
-    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    pointer-events: none;
-    z-index: 1;
-  }
-  .cursor-glow:hover::before { opacity: 1; }
-
-  /* Concentric rings that expand outward */
-  @keyframes ringExpand {
-    0%   { transform: translate(-50%, -50%) scale(0.4); opacity: 0.9; }
-    100% { transform: translate(-50%, -50%) scale(2.6); opacity: 0; }
-  }
-  .ring-expand {
-    animation: ringExpand 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
-  }
-
-  /* Slow conic spin for the outer aura */
-  @keyframes spinSlow {
-    to { transform: rotate(360deg); }
-  }
-  .animate-spin-slow { animation: spinSlow 8s linear infinite; }
-
-  /* Letter reveal – uses inline delay */
-  @keyframes charRise {
-    0%   { opacity: 0; transform: translateY(14px) rotateX(-40deg); filter: blur(4px); }
-    100% { opacity: 1; transform: translateY(0) rotateX(0);        filter: blur(0);   }
-  }
-  .char-rise {
-    display: inline-block;
-    animation: charRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-    transform-origin: 50% 100%;
-  }
-
-  /* Shimmer sweep across an element */
-  @keyframes shimmer {
-    0%   { transform: translateX(-120%) skewX(-12deg); }
-    100% { transform: translateX(220%)  skewX(-12deg); }
-  }
-  .shimmer-sweep {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-    border-radius: inherit;
-  }
-  .shimmer-sweep::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 40%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(0, 255, 133, 0.22),
-      transparent
-    );
-    animation: shimmer 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
-  }
-
-  /* Reveal on scroll (paired with IntersectionObserver adding .in-view) */
-  .reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition:
-      opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: opacity, transform;
-  }
-  .reveal.in-view {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* 3D tilt container (JS sets --rx / --ry) */
-  .tilt-3d {
-    transform: perspective(1000px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg));
-    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    transform-style: preserve-3d;
-    will-change: transform;
-  }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
 }

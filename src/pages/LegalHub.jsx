@@ -214,30 +214,17 @@ export default function LegalHub() {
   const lang = globalLang;
 
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden min-h-screen">
-      {/* Background glow */}
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-primary/10 blur-[140px] pointer-events-none" />
-      <div
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,255,133,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,133,0.15) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-6">
+    <section className="relative pt-6 sm:pt-12 pb-24">
+      <div className="nx-wrap">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-medium text-primary/80 tracking-[0.15em] uppercase mb-4 mono">
-            {t.tag}
-          </div>
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight mb-5">
+        <div className="max-w-3xl mb-14">
+          <div className="nx-eyebrow"><b>{t.tag}</b></div>
+          <h1 className="nx-h1 mt-5 !text-[clamp(36px,5.4vw,64px)]">
             {t.heroTitle[0]}{" "}
-            <span className="text-primary text-glow">{t.heroTitle[1]}</span>
+            <span className="nx-grad">{t.heroTitle[1]}</span>
             {t.heroTitle[2]}
           </h1>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="nx-lead mt-6">
             {t.heroDesc}
           </p>
         </div>

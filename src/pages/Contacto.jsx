@@ -187,99 +187,100 @@ export default function Contacto() {
   };
 
   return (
-    <section className="relative pt-40 pb-24 overflow-hidden">
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
-      <div className="relative max-w-5xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="text-xs font-medium text-primary/80 tracking-wide uppercase mb-4">
-            {tr.tag}
-          </div>
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight mb-4">
-            {tr.title1} <span className="text-primary text-glow">{tr.titleHighlight}</span>{tr.title2}
+    <section className="pt-6 sm:pt-12 pb-16 lg:pb-24">
+      <div className="nx-wrap grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-10 lg:gap-16 items-start">
+        <div className="min-w-0">
+          <div className="nx-eyebrow"><b>{tr.tag}</b></div>
+          <h1 className="nx-h1 mt-5 !text-[clamp(38px,5.6vw,70px)]">
+            {tr.title1} <span className="nx-grad">{tr.titleHighlight}</span>
+            {tr.title2}
           </h1>
-          <p className="text-muted-foreground text-lg">
-            {tr.desc}
-          </p>
-        </div>
+          <p className="nx-lead mt-6">{tr.desc}</p>
 
-        <div className="grid sm:grid-cols-2 gap-5 mb-14">
-          {tr.contacts.map((c) => (
-            <a
-              key={c.email}
-              href={`mailto:${c.email}`}
-              className="glass-panel glass-panel-hover rounded-2xl p-7 group block focus-ring"
-            >
-              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <Mail size={20} className="text-primary" />
+          <div className="mt-10 grid gap-3">
+            {tr.contacts.map((c) => (
+              <div key={c.email} className="nx-soft p-5 flex gap-4 items-start">
+                <div className="nx-icon"><Mail size={18} /></div>
+                <div className="min-w-0">
+                  <div className="font-mono text-[11.5px] uppercase tracking-[0.06em] nx-muted">{c.label}</div>
+                  <a href={`mailto:${c.email}`} className="nx-focus block font-bold text-[18px] tracking-tight mt-1 break-all select-all" style={{ color: "var(--nx-fg)" }}>
+                    {c.email}
+                  </a>
+                  <p className="nx-body text-[14.5px] mt-1">{c.desc}</p>
+                </div>
               </div>
-              <div className="text-xs text-muted-foreground mb-1">{c.label}</div>
-              <div className="font-heading font-semibold text-lg mb-2 break-all">{c.email}</div>
-              <p className="text-muted-foreground text-sm leading-relaxed">{c.desc}</p>
-            </a>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <div className="glass-panel rounded-3xl p-6 sm:p-10 max-w-2xl mx-auto">
-          <h2 className="font-heading font-bold text-2xl tracking-tight mb-6">{tr.formTitle}</h2>
+        <div className="nx-card p-6 sm:p-9 min-w-0">
+          <h2 className="font-black text-[26px] tracking-[-0.03em]" style={{ color: "var(--nx-fg)" }}>{tr.formTitle}</h2>
           {status === "sent" ? (
-            <div className="flex flex-col items-start gap-3 px-4 py-6">
-              <div className="flex items-center gap-3 text-primary">
-                <Check size={20} />
-                <span className="text-sm font-medium">{tr.sentTitle}</span>
+            <div className="mt-6 rounded-[14px] p-5 grid gap-2" style={{ background: "var(--nx-pill-bg)" }}>
+              <div className="flex items-center gap-2 font-semibold" style={{ color: "var(--nx-pill-fg)" }}>
+                <Check size={18} />
+                {tr.sentTitle}
               </div>
-              <p className="text-sm text-muted-foreground">
-                {tr.sentDesc1} <span className="text-foreground">{form.email}</span>{tr.sentDesc2}
+              <p className="nx-body text-[15px]">
+                {tr.sentDesc1} <b style={{ color: "var(--nx-fg)" }}>{form.email}</b>
+                {tr.sentDesc2}
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="text-xs text-muted-foreground mb-2 block">{tr.nombre}</label>
-                <input
-                  type="text"
-                  required
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring"
-                  placeholder={tr.nombrePh}
-                />
+            <form onSubmit={handleSubmit} className="mt-6 grid gap-4">
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid gap-2">
+                  <label htmlFor="contact-name" className="text-[13px] font-semibold" style={{ color: "var(--nx-fg-2)" }}>{tr.nombre}</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    required
+                    autoComplete="name"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    className="nx-input"
+                    placeholder={tr.nombrePh}
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="contact-email" className="text-[13px] font-semibold" style={{ color: "var(--nx-fg-2)" }}>{tr.email}</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    required
+                    autoComplete="email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="nx-input"
+                    placeholder={tr.emailPh}
+                  />
+                </div>
               </div>
-              <div>
-                <label className="text-xs text-muted-foreground mb-2 block">{tr.email}</label>
-                <input
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring"
-                  placeholder={tr.emailPh}
-                />
-              </div>
-              <div>
-                <label className="text-xs text-muted-foreground mb-2 block">{tr.mensaje}</label>
+              <div className="grid gap-2">
+                <label htmlFor="contact-message" className="text-[13px] font-semibold" style={{ color: "var(--nx-fg-2)" }}>{tr.mensaje}</label>
                 <textarea
+                  id="contact-message"
                   required
-                  rows={4}
+                  rows={6}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="w-full bg-secondary/50 border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors focus-ring resize-none"
+                  className="nx-input resize-y min-h-[140px]"
                   placeholder={tr.mensajePh}
                 />
               </div>
               {status === "error" && (
-                <div className="flex items-start gap-2 text-sm text-destructive">
+                <div className="flex items-start gap-2 text-[14px] rounded-[11px] p-3" style={{ background: "var(--nx-warn-bg)", color: "var(--nx-warn)" }}>
                   <AlertCircle size={16} className="mt-0.5 shrink-0" />
                   <span>{errorMsg}</span>
                 </div>
               )}
-              <button
-                type="submit"
-                disabled={status === "sending"}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:glow-emerald transition-all focus-ring disabled:opacity-60"
-              >
-                {status === "sending" ? tr.enviando : tr.enviar}
-                {status === "sending" ? <Loader2 size={18} className="animate-spin" /> : <ArrowRight size={18} />}
-              </button>
+              <div className="flex flex-wrap items-center gap-4 pt-1">
+                <button type="submit" disabled={status === "sending"} className="nx-btn nx-btn-primary nx-focus disabled:opacity-60">
+                  {status === "sending" ? tr.enviando : tr.enviar}
+                  {status === "sending" ? <Loader2 size={17} className="animate-spin" /> : <ArrowRight size={17} />}
+                </button>
+                <span className="font-mono text-[11.5px] uppercase tracking-[0.06em] nx-muted">{t.cta.finalNote}</span>
+              </div>
             </form>
           )}
         </div>
