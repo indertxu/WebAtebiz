@@ -3,27 +3,30 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { PRODUCT_LINKS } from "@/lib/i18n-translations";
-import { Eyebrow, PRODUCT_VISUALS } from "./ui";
+import { Eyebrow } from "./ui";
+import { APP_SCREENS } from "./AppScreens";
+import { Reveal, Stagger, StaggerItem, RotatingTypewriter } from "./fx";
+import Cube, { PRODUCT_TO_FACE } from "./Cube";
 import { FinalBand } from "./CTA";
 
 function ProductSection({ product, detail, index }) {
   const { t, lang } = useI18n();
   const pp = t.productsPage;
-  const Visual = PRODUCT_VISUALS[product.key];
+  const Visual = APP_SCREENS[product.key];
   const links = PRODUCT_LINKS[product.key];
   const isEven = index % 2 === 1;
 
   return (
     <section id={product.key} className="py-14 lg:py-20" style={{ borderTop: "1px solid var(--nx-line)" }}>
       <div className="nx-wrap">
-        <div className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center`}>
+        <div className="grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-10 lg:gap-14 items-center">
           <div className={`min-w-0 ${isEven ? "lg:order-2" : ""}`}>
             <div className="flex flex-wrap items-center gap-2">
               <span className="nx-pill nx-pill-on">{product.name}</span>
               <span className="nx-pill">{product.category}</span>
               <span className={`nx-pill ${product.key === "next-management" ? "nx-pill-warn" : ""}`}>{product.status}</span>
             </div>
-            <h2 className="nx-h2 mt-5">{product.headline}</h2>
+            <Reveal as="h2" className="nx-h2 mt-5">{product.headline}</Reveal>
             <p className="nx-lead mt-5">{product.desc}</p>
             {detail.problem && (
               <p className="nx-body mt-4 text-[15.5px] max-w-[62ch] pl-4" style={{ borderLeft: "2px solid var(--nx-warn)" }}>
@@ -59,30 +62,31 @@ function ProductSection({ product, detail, index }) {
             </div>
           </div>
           <div className={`min-w-0 w-full max-w-[560px] mx-auto lg:max-w-none ${isEven ? "lg:order-1" : ""}`}>
-            <Visual lang={lang} />
+            <Reveal y={40}><Visual lang={lang} /></Reveal>
           </div>
         </div>
 
         <div className="mt-14">
           <Eyebrow tag={product.name}>{detail.blocksTitle}</Eyebrow>
           {detail.blocks && (
-            <div className="mt-5 grid md:grid-cols-3 gap-4">
+            <Stagger className="mt-5 grid md:grid-cols-3 gap-4">
               {detail.blocks.map((b) => (
-                <div key={b.title} className="nx-card p-6">
+                <StaggerItem key={b.title} className="nx-card p-6 transition-transform hover:-translate-y-1">
                   <h3 className="font-bold text-[18px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{b.title}</h3>
                   <p className="nx-body text-[15px] mt-2">{b.desc}</p>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </Stagger>
           )}
           {detail.flow && (
-            <ol
+            <Stagger
+              as="ol"
               className={`mt-5 grid gap-4 ${
                 detail.flow.length > 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3"
               }`}
             >
               {detail.flow.map((s, i) => (
-                <li key={s.title} className="nx-card p-5 grid gap-2 content-start">
+                <StaggerItem as="li" key={s.title} className="nx-card p-5 grid gap-2 content-start transition-transform hover:-translate-y-1">
                   <span
                     className="w-8 h-8 rounded-[10px] grid place-items-center font-mono text-[12px] font-medium text-white"
                     style={{ background: "var(--nx-btn)" }}
@@ -91,9 +95,9 @@ function ProductSection({ product, detail, index }) {
                   </span>
                   <h3 className="font-bold text-[16.5px] tracking-tight mt-1" style={{ color: "var(--nx-fg)" }}>{s.title}</h3>
                   <p className="nx-body text-[14.5px]">{s.desc}</p>
-                </li>
+                </StaggerItem>
               ))}
-            </ol>
+            </Stagger>
           )}
         </div>
 
@@ -134,7 +138,7 @@ function ProductSection({ product, detail, index }) {
 }
 
 export default function Products() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const pp = t.productsPage;
   const products = t.ecosystem.products;
 
@@ -143,12 +147,17 @@ export default function Products() {
       <section className="pt-6 sm:pt-12 pb-12">
         <div className="nx-wrap">
           <Eyebrow tag={pp.tag} />
-          <h1 className="nx-h1 mt-5 max-w-[16ch]">{pp.title}</h1>
+          <h1 className="nx-h1 mt-5 max-w-[16ch]">
+            {pp.title}
+            <span className="block nx-grad min-h-[1.05em]">
+              <RotatingTypewriter key={lang} texts={pp.rotate} startDelay={600} />
+            </span>
+          </h1>
           <p className="nx-lead mt-6">{pp.desc}</p>
           <nav className="mt-8 grid sm:grid-cols-3 gap-3" aria-label={pp.jump}>
             {products.map((p) => (
               <a key={p.key} href={`#${p.key}`} className="nx-card nx-focus p-4 flex items-center gap-3 transition-transform hover:-translate-y-0.5">
-                <img src="/logo.png" alt="" width="34" height="34" />
+                <span className="w-10 h-10 shrink-0"><Cube active={PRODUCT_TO_FACE[p.key]} className="w-full h-full" label={p.name} /></span>
                 <span className="min-w-0">
                   <span className="block font-bold text-[16px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{p.name}</span>
                   <span className="block text-[13px] truncate nx-muted">{p.category}</span>

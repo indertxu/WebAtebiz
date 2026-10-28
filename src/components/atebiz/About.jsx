@@ -4,6 +4,8 @@ import { ArrowRight, Building2, Globe, LineChart, Lock, MapPin, Shield, Users, Z
 import { useI18n } from "@/lib/i18n";
 import { Eyebrow, SectionHead } from "./ui";
 import { ProductCta } from "./Ecosystem";
+import { Reveal, Stagger, StaggerItem } from "./fx";
+import Cube, { PRODUCT_TO_FACE } from "./Cube";
 
 const HIGHLIGHT_ICONS = [MapPin, Building2, Globe, Users];
 const VALUE_ICONS = [Zap, LineChart, Shield, Lock];
@@ -63,39 +65,39 @@ export default function About() {
             </div>
           </div>
           <div className="min-w-0 w-full max-w-[520px] mx-auto lg:mt-10">
-            <PlacesPanel />
+            <Reveal y={30}><PlacesPanel /></Reveal>
           </div>
         </div>
 
-        <div className="nx-wrap mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <Stagger className="nx-wrap mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {a.highlights.map((h, i) => {
             const Icon = HIGHLIGHT_ICONS[i];
             return (
-              <div key={h.title} className="nx-soft p-5 flex gap-4 items-start">
+              <StaggerItem key={h.title} className="nx-soft p-5 flex gap-4 items-start">
                 <div className="nx-icon"><Icon size={18} /></div>
                 <div className="min-w-0">
                   <h2 className="font-bold text-[15.5px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{h.title}</h2>
                   <p className="nx-body text-[14px] mt-1">{h.desc}</p>
                 </div>
-              </div>
+              </StaggerItem>
             );
           })}
-        </div>
+        </Stagger>
       </section>
 
       <section className="py-14 lg:py-20">
-        <div className="nx-wrap grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+        <Stagger className="nx-wrap grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
           {a.values.map((v, i) => {
             const Icon = VALUE_ICONS[i];
             return (
-              <div key={v.title} className="nx-card p-6">
+              <StaggerItem key={v.title} className="nx-card p-6 transition-transform hover:-translate-y-1">
                 <div className="nx-icon"><Icon size={19} /></div>
                 <h2 className="font-black text-[24px] tracking-[-0.03em] mt-5" style={{ color: "var(--nx-fg)" }}>{v.title}</h2>
                 <p className="nx-body text-[15px] mt-1.5">{v.desc}</p>
-              </div>
+              </StaggerItem>
             );
           })}
-        </div>
+        </Stagger>
       </section>
 
       <section className="py-14 lg:py-20">
@@ -110,11 +112,11 @@ export default function About() {
             }
             desc={a.ofrecemosDesc}
           />
-          <div className="mt-10 grid md:grid-cols-3 gap-4">
+          <Stagger className="mt-10 grid md:grid-cols-3 gap-4">
             {products.map((p) => (
-              <article key={p.key} className="nx-card p-6 flex flex-col">
+              <StaggerItem as="article" key={p.key} className="nx-card p-6 flex flex-col transition-transform hover:-translate-y-1">
                 <div className="flex items-center gap-3">
-                  <img src="/logo.png" alt="" width="34" height="34" />
+                  <span className="w-11 h-11 shrink-0"><Cube active={PRODUCT_TO_FACE[p.key]} className="w-full h-full" label={p.name} /></span>
                   <div className="min-w-0">
                     <h3 className="font-bold text-[18px] tracking-tight" style={{ color: "var(--nx-fg)" }}>{p.name}</h3>
                     <span className="font-mono text-[11.5px] uppercase tracking-[0.06em] nx-muted">{p.status}</span>
@@ -125,9 +127,9 @@ export default function About() {
                   <ProductCta product={p} />
                   <Link to={`/productos#${p.key}`} className="nx-link nx-focus text-[14px]">{a.verFicha} →</Link>
                 </div>
-              </article>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
 
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/productos" className="nx-btn nx-btn-primary nx-focus">

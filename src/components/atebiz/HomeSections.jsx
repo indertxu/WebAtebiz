@@ -27,7 +27,7 @@ export function Connectors() {
   const c = t.home.connectors;
   return (
     <section id="conectores" className="relative py-16 lg:py-24 overflow-hidden">
-      <SectionMark n={4} />
+      <SectionMark n={6} />
       <div className="nx-wrap">
         <Reveal className="grid lg:grid-cols-2 gap-6 items-end">
           <div>
@@ -61,7 +61,7 @@ export function SpeedBand() {
   const locale = lang === "en" ? "en-GB" : "es-ES";
   return (
     <section id="velocidad-home" className="relative py-16 lg:py-24">
-      <SectionMark n={5} />
+      <SectionMark n={7} />
       <div className="nx-wrap">
         <div className="nx-panel relative p-6 sm:p-10 lg:p-14">
           <div className="nx-glow-orb w-[480px] h-[480px] -right-32 -top-48" style={{ background: "rgba(52,211,153,.18)" }} aria-hidden="true" />
@@ -125,7 +125,7 @@ export function Manifesto() {
 
   return (
     <section id="manifiesto" className="relative py-16 lg:py-24">
-      <SectionMark n={6} />
+      <SectionMark n={8} />
       <div className="nx-wrap">
         <div className="nx-eyebrow"><b>{c.tag}</b></div>
         <h2 ref={ref} className="font-black tracking-[-0.055em] leading-[0.98] mt-5 text-[clamp(44px,8.6vw,124px)]" style={{ color: "var(--nx-fg)" }}>
@@ -191,7 +191,7 @@ export function FinalCall() {
 
   return (
     <section id="hablemos" className="relative pt-16 lg:pt-24 pb-24 lg:pb-32">
-      <SectionMark n={7} />
+      <SectionMark n={10} />
       <div className="nx-wrap">
         <div className="nx-panel relative p-7 sm:p-12 lg:p-16 grid lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] gap-10 items-center">
           <div className="nx-glow-orb w-[560px] h-[560px] -left-40 -bottom-72" style={{ background: "rgba(52,211,153,.2)" }} aria-hidden="true" />

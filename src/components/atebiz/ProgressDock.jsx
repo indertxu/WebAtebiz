@@ -81,7 +81,7 @@ export default function ProgressDock({ ids }) {
               <span className="font-mono text-[11px]">{String(current + 1).padStart(2, "0")}</span>
             </span>
 
-            <div className="min-w-0 hidden sm:block w-[150px]">
+            <div className="min-w-0 hidden sm:block w-[160px]">
               <div className="font-mono text-[10px] uppercase tracking-[0.08em]" style={{ color: "#82A69A" }}>
                 {t.home.step(current + 1, ids.length)}
               </div>
@@ -99,6 +99,12 @@ export default function ProgressDock({ ids }) {
               </AnimatePresence>
             </div>
 
+            {!last && (
+              <div className="hidden xl:block min-w-0 w-[170px] pl-3" style={{ borderLeft: "1px solid rgba(255,255,255,.1)" }}>
+                <div className="font-mono text-[10px] uppercase tracking-[0.08em]" style={{ color: "#82A69A" }}>{t.home.nextLabel}</div>
+                <div className="font-semibold text-[13px] truncate" style={{ color: "#B4D1C6" }}>{names[current + 1]}</div>
+              </div>
+            )}
             <div className="hidden md:flex items-center gap-1.5 px-1">
               {ids.map((id, i) => (
                 <button

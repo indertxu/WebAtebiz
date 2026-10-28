@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import Cube, { FACE_TO_PRODUCT } from "./Cube";
-import { CountUp, DrawSpark, EASE, GrowBar, LiveNumber, Magnetic, Typewriter } from "./fx";
+import { CountUp, DrawSpark, EASE, GrowBar, LiveNumber, Magnetic, RotatingTypewriter } from "./fx";
 
 const REVENUE = [4.9, 5.1, 5.0, 5.4, 5.3, 5.6, 5.5, 5.8, 5.7, 6.2, 6.5, 6.89];
 const ORDER = ["top", "right", "left"];
@@ -105,6 +105,18 @@ function CubeStage() {
 
   const titles = { top: h.nr.title, right: h.nd.title, left: h.nm.title };
 
+  // Inclinación 3D del cubo siguiendo al ratón
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const rotY = useSpring(useTransform(mx, [-0.5, 0.5], [-14, 14]), { stiffness: 120, damping: 16 });
+  const rotX = useSpring(useTransform(my, [-0.5, 0.5], [10, -10]), { stiffness: 120, damping: 16 });
+  const onMove = (e) => {
+    if (reduce) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    mx.set((e.clientX - r.left) / r.width - 0.5);
+    my.set((e.clientY - r.top) / r.height - 0.5);
+  };
+
   // Coordenadas en un lienzo de 1000×1000 (mismo sistema que las líneas guía)
   const leaders = {
     top: "M500,300 C560,230 620,170 690,150",
@@ -116,7 +128,13 @@ function CubeStage() {
     <div
       className="relative mx-auto w-full max-w-[600px]"
       onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      onMouseLeave={() => {
+        setHover(false);
+        mx.set(0);
+        my.set(0);
+      }}
+      onMouseMove={onMove}
+      style={{ perspective: 1200 }}
     >
       <div className="relative aspect-square">
         {/* Órbita decorativa */}
@@ -141,7 +159,7 @@ function CubeStage() {
           ))}
         </svg>
 
-        <div className="absolute left-[17%] top-[14%] w-[66%]">
+        <motion.div className="absolute left-[17%] top-[14%] w-[66%]" style={{ rotateX: rotX, rotateY: rotY, transformStyle: "preserve-3d" }}>
           <Cube
             active={active}
             onFace={(f) => setActive(f)}
@@ -149,7 +167,7 @@ function CubeStage() {
             faceLabels={titles}
             className="w-full h-auto overflow-visible"
           />
-        </div>
+        </motion.div>
 
         {/* Tarjetas (escritorio) */}
         <div className="hidden sm:block absolute left-[64%] top-[2%]">
@@ -213,7 +231,7 @@ export default function Hero() {
               {h.title1}
             </motion.span>
             <span className="block nx-grad min-h-[2em]">
-              <Typewriter key={lang} text={h.titleHighlight} delay={800} speed={46} />
+              <RotatingTypewriter key={lang} texts={t.home.hero.rotate} startDelay={800} />
             </span>
           </h1>
 

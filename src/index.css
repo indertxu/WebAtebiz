@@ -572,3 +572,14 @@
   }
   .nx-scroll-cue { animation: nxScrollCue 2.2s var(--nx-ease) infinite; }
 }
+
+@layer components {
+  .nx-strike {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 55%;
+    transition: background-size 0.7s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}

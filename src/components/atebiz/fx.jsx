@@ -263,3 +263,37 @@ export function Magnetic({ children, strength = 0.25, className = "" }) {
     </motion.span>
   );
 }
+
+/* Titular que escribe, borra y escribe la siguiente frase (como Next Reporting) */
+export function RotatingTypewriter({ texts, typeSpeed = 48, deleteSpeed = 24, hold = 2600, startDelay = 700, className = "" }) {
+  const reduce = useReducedMotion();
+  const [i, setI] = useState(0);
+  const [n, setN] = useState(reduce ? texts[0].length : 0);
+  const [phase, setPhase] = useState(reduce ? "hold" : "wait");
+
+  useEffect(() => {
+    if (reduce) return;
+    let timer;
+    const full = texts[i];
+    if (phase === "wait") timer = setTimeout(() => setPhase("type"), startDelay);
+    else if (phase === "type") {
+      if (n < full.length) timer = setTimeout(() => setN(n + 1), typeSpeed + Math.random() * 28);
+      else timer = setTimeout(() => setPhase("delete"), hold);
+    } else if (phase === "delete") {
+      if (n > 0) timer = setTimeout(() => setN(n - 1), deleteSpeed);
+      else {
+        setI((i + 1) % texts.length);
+        setPhase("type");
+      }
+    }
+    return () => clearTimeout(timer);
+  }, [phase, n, i, texts, typeSpeed, deleteSpeed, hold, startDelay, reduce]);
+
+  return (
+    <span className={className}>
+      <span className="sr-only">{texts[0]}</span>
+      <span aria-hidden="true">{texts[i].slice(0, n)}</span>
+      <span aria-hidden="true" className="nx-caret" />
+    </span>
+  );
+}

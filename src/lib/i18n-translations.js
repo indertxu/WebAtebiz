@@ -63,6 +63,12 @@ const es = {
     ...LEGACY.es.navbar,
     tema: "Cambiar tema",
     hablar: "Hablar con el equipo",
+    entrar: "Entrar",
+    demo: "Pide demo",
+    entrarTitle: "Accede a tu producto",
+    prueba: "Prueba de Next Reporting",
+    pruebaSub: "Empieza sin compromiso",
+    appSub: { "next-reporting": "Informes y KPIs del grupo", "next-data": "Login de Next Data" },
   },
   hero: {
     badge: "Atebiz",
@@ -137,7 +143,8 @@ const es = {
   },
   productsPage: {
     tag: "Productos",
-    title: "La familia Next, por dentro.",
+    title: "La familia Next,",
+    rotate: ["por dentro.", "Next Reporting.", "Next Data.", "Next Management."],
     desc:
       "Tres productos con el mismo diseño, la misma seguridad y el mismo equipo detrás. Elige el que encaja con tu equipo, o combínalos.",
     jump: "Ir a",
@@ -288,6 +295,12 @@ const en = {
     ...LEGACY.en.navbar,
     tema: "Toggle theme",
     hablar: "Talk to our team",
+    entrar: "Sign in",
+    demo: "Book a demo",
+    entrarTitle: "Go to your product",
+    prueba: "Next Reporting trial",
+    pruebaSub: "Start with no commitment",
+    appSub: { "next-reporting": "Group reports and KPIs", "next-data": "Next Data sign-in" },
   },
   hero: {
     badge: "Atebiz",
@@ -361,7 +374,8 @@ const en = {
   },
   productsPage: {
     tag: "Products",
-    title: "The Next family, inside.",
+    title: "The Next family,",
+    rotate: ["inside.", "Next Reporting.", "Next Data.", "Next Management."],
     desc:
       "Three products with the same design, the same security and the same team behind them. Pick the one that fits your team, or combine them.",
     jump: "Jump to",
